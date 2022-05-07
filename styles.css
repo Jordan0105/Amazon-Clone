@@ -1,0 +1,44 @@
+.header{
+    color: white;
+    background-color: black;
+    padding: 12px 12px 0px 12px;
+    font-family: Helvetica;
+ 
+}
+
+.header2{
+    color: white;
+    background-color: black;
+    padding: 2px 12px 0px 12px;
+    font-family: Helvetica;
+    font-size: 12px;
+    
+}
+ .headerli{
+    display: inline;
+    margin: 4px 30px;
+    padding: 6px;
+   
+ }
+ .headerli:hover{
+    border-color: rgba(0, 255, 255, 0.174);
+    border-style: solid;
+    border-width: 1px;
+ }
+ .header2li{
+    display: inline;
+    margin: 0px 30px;
+    padding: 0px;
+ }
+ .header2li:hover{
+    
+    color: red;
+    padding-bottom: 3px;
+    border-bottom: 2.5px solid red;
+    
+ }
+ 
+body{
+      background-color: black;
+  } 
+
