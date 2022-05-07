@@ -1,2 +1,2 @@
 # Shopping-Website
-Nothing, just a Amazon clone.
+Nothing, just an Amazon clone.
