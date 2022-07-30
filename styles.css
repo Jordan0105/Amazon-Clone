@@ -1,0 +1,1867 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+body {
+
+   background-color: rgb(0, 0, 0);
+   margin: 0px;
+   width: 100%;
+   min-width: 1260px;
+
+}
+
+.nav-bar {
+
+   background-color: white;
+   width: auto;
+   height: 65px;
+   margin: 0px;
+   font-family: 'Kdam Thmor Pro', Helvetica;
+
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   flex-grow: 2;
+
+}
+
+.nav-bar>div {
+
+   border: 1px solid transparent;
+   cursor: pointer;
+
+}
+
+.nav-bar>div:hover:not(.searchBox, .logo_Delivery) {
+
+   border: 1px solid black;
+
+}
+
+
+.logo_Delivery {
+
+   display: flex;
+   align-items: center;
+   margin-left: 10px;
+   padding: 0px 3px;
+
+}
+
+.logoBox {
+
+   width: 120px;
+   float: left;
+   height: 31px;
+   margin-right: 0px;
+   display: flex;
+   align-items: center;
+   padding: 6px 5px;
+   border: 1px solid transparent;
+   cursor: pointer;
+}
+
+.logo {
+
+   width: 120px;
+   height: 25px;
+
+}
+
+.country {
+
+   font-size: 12px;
+   height: 31px;
+   max-width: 120px;
+
+   margin-right: 5px;
+  
+   width: auto;
+   padding: 6px 10px;
+   border: 1px solid transparent;
+   cursor: pointer;
+
+}
+
+.country:hover, .logoBox:not(#logoBoxFooter):hover {
+
+   border: 1px solid black;
+
+}
+
+.country p {
+   display: flex;
+   flex-grow: 2;
+   min-width: 50px;
+   max-width: 150px;
+   width: auto;
+   height: 13px;
+   margin: 0px;
+   font-family: 'Kdam Thmor Pro', "Lucida Console";
+   color: black;
+
+}
+
+#countrySpan {
+   min-width: 50px;
+   max-width: 116px;
+ 
+ 
+   max-height: 17px;
+   display: block;
+   width: 100%;
+
+   margin-top: -19px;
+   margin-left: 12px;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+ 
+}
+
+
+.country p i{
+   display: block;
+   margin-top: 4px;
+}
+
+.searchBox {
+
+   border-radius: 2px;
+   display: flex;
+   width: 780px;
+   height: 32px;
+   align-items: center;
+   justify-content: center;
+   margin-left: 5px;
+   flex-grow: 2;
+   overflow: hidden;
+   background-color: black;
+ 
+}
+
+.searchBar {
+
+   background-color: black;
+   color: white;
+   width: 300px;
+   height: 32px;
+   float: left;
+   padding: 6px;
+   margin: 0px;
+   font-size: 15px;
+   border: 2px solid black;
+   outline: none;
+   flex-grow: 2;
+   border-right: 0px;
+}
+
+::placeholder {
+   color: white;
+ }
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+   display: none;
+}
+
+
+.searchIcon {
+
+   width: 33px;
+   height: 28px;
+   background-color: orange;
+   border: 2px solid black;
+   border-left: 2px solid;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+
+}
+
+.changeLang {
+
+   margin-left: 20px;
+   height: 31.267px;
+   padding: 6px 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+
+.changeLang:hover>.container {
+   display: block;
+}
+
+
+
+.container {
+
+   display: none;
+   width: 250px;
+   height: 521px;
+
+   position: absolute;
+   top: 50px;
+   right: auto;
+   margin-left: 195px;
+   color: white;
+   z-index: 3;
+}
+
+
+.box {
+
+   /* background-color: #131a22; */
+   background-color: #222931;
+   width: 250px;
+   height: 520px;
+   overflow: hidden;
+
+}
+
+.box a:link{
+   text-decoration: none;
+   margin-top: 17.3px;
+   color: #7aa5d1;
+}
+
+.box a:hover{
+   color: #edb37c;
+   text-decoration: underline;
+}
+
+.currentLanguage {
+
+   height: 90px;
+   display: flex;
+   flex-wrap: wrap;
+   margin: 5px 0px 15px 0px;
+   padding: 0px 0px 0px 15px;
+   border-bottom: 1.5px solid black;
+   border-bottom-color: #ffffff3d;
+}
+
+.engBox {
+
+   margin: 0px;
+
+}
+
+#currentLabel:hover{
+   color: none;
+}
+
+.chooseLanguage {
+   margin-left: 15px;
+   padding: 0px;
+}
+
+
+a:not(.aFooter, .CoU, .opLink) {
+   display: inline-block;
+   margin: 16px 0px 0px 10px;
+   font-size: 10px;
+   height: 2px;
+}
+
+
+
+.box p {
+   margin: 14px 0px 0px 15px;
+   font-size: 12px;
+}
+
+
+.triangle {
+
+   width: 0;
+   height: 0;
+   border-style: solid;
+   border-width: 0 10px 10px 10px;
+   border-color: transparent transparent #222931 transparent;
+   margin-left: 30px;
+}
+
+
+.box div div label {
+   font-size: 12px;
+   color: #e2dddd;;
+}
+
+.box div div label:hover {
+
+   text-decoration: underline;
+   color: orange;
+
+}
+
+.box .currentLanguage .engBox label:hover {
+   text-decoration: none;
+   
+}
+
+.currentCurrency {
+
+   height: 120px;
+   display: flex;
+   flex-wrap: wrap;
+   margin: 10px 0px 0px 0px;
+   border-top: 1.5px solid;
+   border-bottom: 1.5px solid;
+   border-color: #ffffff3d;
+}
+
+.currentCurrency p {
+
+   width: auto;
+
+}
+
+#changeLnk {
+
+   margin-left: 65px;
+   font-size: 11px;
+
+
+}
+
+.changeCountry {
+
+   height: 120px;
+   float: left;
+
+
+}
+
+.changeCountry span {
+
+   width: 100%;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   border: 0px;
+   margin: 10px 0px 0px 15px;
+
+
+}
+
+.changeCountry p {
+   font-size: 12px;
+   margin: 0px;
+   width: 90%;
+   margin-left: 10px;
+   display: flex;
+   align-items: center;
+
+}
+
+.changeCountry img {
+
+   width: 15px;
+   height: 15px;
+   margin-left: 5px;
+
+}
+
+.changeCountry a {
+
+   display: flex;
+   justify-content: center;
+   font-size: 12px;
+
+
+}
+
+.changeCountry a:hover {
+
+   text-decoration: none;
+
+}
+
+#signInBox,
+#returnOrders {
+
+   font-size: 12px;
+   margin-left: 0px;
+   min-width: 115px;
+   padding: 3px 10px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+
+#generalShadowBox {
+
+   top: 123px;
+   min-width: 1260px;
+   width: 290%;
+   display: none;
+   flex-grow: 2;
+   height: 4017px;
+   position: absolute;
+   z-index: 2;
+   background-color: rgba(0, 0, 0, 0.527);
+}
+
+#signInBox:hover>.containerSign {
+   display: block;
+}
+
+
+.containerSign {
+
+   display: none;
+   width: 500px;
+   height: 378px;
+
+   z-index: 3;
+
+   position: absolute;
+   top: 50px;
+   right: auto;
+   margin-right: 126px;
+  
+
+}
+
+.boxSign {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   background-color: #222931;
+   color: white;
+}
+
+.signBoxHover {
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+
+   width: 100%;
+   height: 100px;
+   border-bottom: 1.5px solid #ffffff3d;;
+}
+
+.newCostumer a {
+
+   margin: 0px;
+   font-size: 11px;
+   color: #7aa5d1;
+}
+
+.newCostumer a:link {
+   text-decoration: none;
+}
+
+.newCostumer a:hover {
+
+   color: #edb37c;
+}
+
+.btnSignIn:not(#signPBox, #signAdressBtn){
+
+   background-color: orange;
+   color: black;
+   font: 12px 'Kdam Thmor Pro', Helvetica;
+   width: 200px;
+   height: 37px;
+   border-radius: 10px;
+   cursor: pointer;
+
+}
+
+.btnSignIn:not(#signPBox, #signAdressBtn):hover {
+
+   background-color: rgb(190, 124, 0);
+
+
+}
+
+
+.btnSignInCard {
+   width: 245px;
+}
+
+#btnSignAccount {
+   margin-top: 15px;
+}
+
+
+.btnBox {
+
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+
+.urListBox,
+.urAccount {
+
+   width: 279.2px;
+   height: 277px;
+   list-style-type: none;
+   padding: 0px 10px;
+
+}
+
+.urAccount {
+
+
+   border-left: 1.5px solid #ffffff3d;;
+
+
+}
+
+.listBox,
+.listAccount {
+   list-style-type: none;
+   padding: 0px 10px;
+
+
+}
+
+li:not(.navOp li):hover {
+
+   text-decoration: underline;
+   color: orange;
+
+}
+
+.listContainer {
+   width: 100%;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #e2dddd;;
+}
+
+.listContainer h3{
+   margin-left: 8px;
+}
+
+.triangle2 {
+   width: 0;
+   height: 0;
+   border-style: solid;
+   border-width: 0 10px 10px 10px;
+   border-color: transparent transparent #222931  transparent;
+   margin-left: 342px;
+}
+
+#returnOrders {
+
+   min-width: 79px;
+
+
+}
+
+#cartShop {
+
+   margin-right: 22px;
+   height: 31.267px;
+   margin-left: 0px;
+   padding: 6px 10px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+
+
+#cartText {
+   color: black;
+   margin-top: 7px;
+   margin-left: 2px;
+   font-size: 12px;
+}
+
+#cartText span:hover {
+   border: 0px;
+}
+
+#cartAmount {
+   display: block;
+   margin-bottom: -27px;
+   margin-left: 6px;
+   font-size: 17px;
+}
+
+.navMain {
+
+   width: 100%;
+   height: auto;
+   margin-top: 0px;
+
+   display: flex;
+   align-items: center;
+
+}
+
+.navOp {
+
+   width: 100%;
+   height: 58px;
+   margin-top: 0px;
+   font: 12px 'Kdam Thmor Pro', Helvetica;
+   color: white;
+   background-color: #0F1111;
+
+   display: flex;
+   align-items: center;
+   list-style-type: none;
+
+}
+
+.op {
+
+   height: 33px;
+   width: 100px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid transparent;
+
+}
+
+.opLink:link{
+
+   color: #e2dddd;
+   text-decoration: none;
+
+}
+
+.bigBoxOp {
+   padding: 0px 20px;
+}
+
+.op:hover {
+
+   border: 1px solid white;
+
+
+}
+
+
+#allBtn {
+
+   margin-left: 5px;
+
+}
+
+#main {
+
+   width: auto;
+   display: flex;
+   justify-content: center;
+
+}
+
+.mainConteiner {
+
+   margin-top: 0px;
+   width: 1600px;
+   min-width: 1100px;
+   height: auto;
+
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   overflow: hidden;
+
+}
+
+.mainContent {
+
+
+   width: 1440px;
+   min-width: 1160px;
+   height: 2555px;
+
+   background-image: url("https://wallpapers.com/images/high/amazon-digital-city-art-npcp6jc782ixp9zs.jpg");
+   background-size: 100% 490px;
+   background-repeat: no-repeat;
+
+   display: flex;
+   justify-content: center;
+   background-color: white;
+   flex-wrap: wrap;
+
+}
+
+.btnright,
+.btnleft {
+
+   width: 80px;
+   height: 330px;
+   top: 130px;
+   position: absolute;
+   padding: 16px;
+
+   cursor: pointer;
+   border: 2px solid transparent;
+   border-radius: 3px;
+
+
+   background-color: transparent;
+
+   font-weight: bold;
+   font-size: 18px;
+
+   transition: 0.6s ease;
+
+
+}
+
+.btnright {
+
+   margin-left: 1180px;
+
+}
+
+.btnleft {
+
+
+   margin-right: 1180px;
+
+
+}
+
+
+.material-symbols-outlined {
+
+   font-size: 35px;
+   border: none;
+
+}
+
+.material-symbols-outlined:hover {
+   border: none;
+}
+
+.cardsContainer {
+   width: 1440px;
+   min-width: 1294px;
+   height: 1200px;
+   margin-top: 350px;
+
+   display: flex;
+   justify-content: center;
+   background-color: transparent;
+   flex-wrap: wrap;
+
+}
+
+.cardsContainer2 {
+   width: 1440px;
+   min-width: 1294px;
+   height: 855px;
+   margin-top: 75px;
+
+   display: flex;
+   justify-content: center;
+   background-color: transparent;
+   flex-wrap: wrap;
+
+
+}
+
+.cards {
+
+
+   width: 295px;
+   height: 420px;
+   background-color: black;
+   margin: 0px 20px -315px 0px;
+   text-align: center;
+   transition: transform .8s;
+   font-family: 'Kdam Thmor Pro', "Lucida Console";
+
+}
+
+/* .mainContent div:not(#carroussel, #locationPopBox) div:not(.cardsCategory, #chooseCountryBox, #signDeliveryContainer) div:not(#countryListBox) {
+   margin-top: 24px;
+} */
+
+.cards:hover:not(#signDeliveryContainer),
+#cardsDelivery:hover,
+#cardsSignIn:hover {
+
+   transform: scale(1.05);
+
+}
+
+.cards2:hover {
+   transform: scale(1.05);
+
+}
+
+.cards h3 {
+
+   color: white;
+   height: 20px;
+}
+
+.cards img {
+
+   display: inline-block;
+   width: 100px;
+   height: 100px;
+   object-fit: cover;
+   margin: 0px;
+   margin-left: 10px;
+   object-fit: cover;
+   object-position: 10% 20%;
+
+}
+
+
+.cards p {
+
+   display: inline-block;
+   color: white;
+   width: 100px;
+   margin-top: 2px;
+   margin-left: 11px;
+
+   font-size: 10px;
+
+}
+
+.shopNow,
+.seeMore {
+   width: 48%;
+}
+
+#gamingMerchandise .shopNow{
+   margin-top: 10px;
+}
+
+.shopNow a,
+.seeMore a {
+   font-size: 13px;
+   color: #7aa5d1;
+}
+
+.shopNow a:link,
+.seeMore a:link {
+   text-decoration: none;
+}
+
+.shopNow:hover *,
+.seeMore:hover * {
+   text-decoration: underline;
+   color: #edb37c;
+   ;
+}
+
+#cardsDealsProm img {
+
+   display: inline-block;
+   width: 212px;
+   height: 224px;
+   margin-top: 50px;
+   object-fit: cover;
+   object-position: 10% -250%;
+
+
+}
+
+#signDeliveryContainer {
+
+   background-color: transparent;
+
+}
+
+#cardsSignIn {
+
+   width: 295px;
+   height: 150px;
+   background-color: black;
+
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin-bottom: 22px;
+   transition: transform .8s;
+
+}
+
+#cardsSignIn h3 {
+   text-align: left;
+   width: 80%;
+}
+
+
+#cardsDelivery {
+
+   width: 295px;
+   height: 247px;
+   margin: -15.3px 0px 0px -11px;
+   background-image: url("https://img.inddist.com/files/base/indm/all/image/2018/02/id_33983_amazon_fba.png?fit=crop&h=394&w=700");
+   background-size: 295px 247px;
+   background-repeat: no-repeat;
+   transition: transform .8s;
+   cursor: pointer;
+
+}
+
+.cards2 {
+
+   margin: 0px 20px 0px 0px;
+
+}
+
+
+.firstCard {
+   margin-left: 20px;
+}
+
+
+.cards2 img {
+
+   width: 82%;
+   height: 220px;
+   margin: 10px 0px 0px;
+   object-fit: fill;
+
+}
+
+
+
+#allListContainer {
+
+   width: auto;
+   min-width: 369px;
+   position: absolute;
+   z-index: 3;
+   height: 100%;
+   overflow: hidden;
+
+   background-color: none;
+   color: black;
+   left: -380px;
+   top: 0px;
+}
+
+#containerList {
+
+   width: 318px;
+   height: 91.2%;
+   margin-top: -15px;
+   background-color: white;
+   overflow-y: scroll;
+   overflow-x: hidden;
+   padding-bottom: 169px;
+}
+
+#containerHeader {
+   background-color: rgb(255, 215, 154);
+   width: 293px;
+   height: 66.431px;
+   margin-top: -15px;
+   padding-left: 25px;
+   /* box-shadow: 0px 0px 50px; */
+}
+
+#containerHeader h2 {
+
+   padding-top: 10px;
+
+}
+
+#containerContent {
+
+   background-color: white;
+   width: 100%;
+   margin-top: -14px;
+
+}
+
+
+.containerOp:not(.helpOp) {
+
+   width: 100%;
+   height: auto;
+   border-bottom: 1.5px solid black;
+
+
+}
+
+
+.containerOp p {
+
+
+   width: 91%;
+   margin-top: -12px;
+   font-size: 13px;
+   padding: 10px 0px 10px 25px;
+   height: auto;
+   color: black;
+
+}
+
+.containerOp p:hover {
+   background-color: rgba(128, 128, 128, 0.258);
+}
+
+
+.containerOp p i {
+
+   float: right;
+   margin: 2px 15px 0px 0px;
+   color: gray;
+
+}
+
+.containerOp p:hover>i {
+   color: black;
+}
+
+
+.allContent h3 {
+   padding: 16px 0px 0px 25px;
+   margin-bottom: 22px;
+}
+
+.containerOp .seeAll i {
+
+   margin: 2px 0px 0px 5px;
+   float: none;
+
+}
+
+.helpOp .langOpList i {
+
+   float: left;
+
+}
+
+.flagOpList img {
+
+   margin: 0px 10px -2px -5px;
+
+}
+
+.helpOp img {
+
+
+   width: 15px;
+   height: 15px;
+}
+
+#xBtn {
+
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   float: right;
+   top: 5px;
+   left: 326px;
+   position: absolute;
+
+   width: 40px;
+   height: 40px;
+   font-size: 18px;
+   background-color: transparent;
+   color: rgb(255, 255, 255);
+
+}
+
+#shadow {
+   width: 100%;
+   min-width: 1260px;
+   position: absolute;
+   height: 4620px;
+   background-color: rgb(0 0 0 / 81%);
+   display: none;
+   z-index: 2;
+}
+
+.openBoxBtn {
+   cursor: pointer;
+}
+
+
+
+
+#carroussel {
+
+   background-color: black;
+   margin-left: 1px;
+   margin-top: 1240px;
+   position: absolute;
+   width: 1238px;
+   height: 315px;
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+
+
+
+}
+
+#moveBox {
+
+
+   width: 4632px;
+   /* width: 4290px; */
+   min-height: 200px;
+   align-items: center;
+   position: relative;
+   overflow: hidden;
+   /* left: -3416px maximo; */
+
+
+}
+
+
+
+#moveBox div {
+
+   width: 220px;
+   height: 190px;
+   display: inline-block;
+   margin: 0px 12px 0px 0px;
+   overflow: hidden;
+   border: 4px solid white;
+   /* -1220px */
+
+}
+
+#moveBox div img {
+   width: 100%;
+   height: 100%;
+   object-fit: fill;
+}
+
+.btnCarroussel {
+
+   width: 40px;
+   height: 90px;
+   background-color: black;
+   position: absolute;
+   border: 0px;
+   top: 1495px;
+   color: white;
+   z-index: 1;
+
+}
+
+.btnCarroussel span {
+   font-size: 18px;
+}
+
+#leftbtn {
+
+   margin-left: -1140px;
+
+
+}
+
+#rightbtn {
+
+   margin-left: 1140px;
+
+
+}
+
+
+#topBooks {
+
+   width: auto;
+   height: auto;
+   margin-left: 27px;
+   margin-top: -20px;
+
+}
+
+#topBooks h3 {
+   font-family: 'Kdam Thmor Pro', "Lucida Console";
+   color: white;
+   height: 20px;
+   float: left;
+
+
+}
+
+#containerBox {
+
+   width: 1245px;
+   height: 240px;
+   margin-left: 30px;
+   margin-right: 30px;
+   overflow: hidden;
+   margin-top: -50px;
+
+}
+
+.cardsLine2 {
+   margin-top: -50px;
+   margin-bottom: 75px;
+}
+
+.seeMore{
+   margin-top: 24px;
+}
+
+.bottomText{
+   margin-top: 50px;
+}
+#signInPersonalized {
+
+   min-width: 1260px;
+   height: 260px;
+   border-left: 0px;
+   border-right: 0px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   flex-grow: 1;
+   font-family: 'Kdam Thmor Pro', Helvetica;
+   background-color: #303e4f;
+}
+
+
+
+#personalizedBox {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   font-size: 16px;
+   border: 1px solid #ffffff3d;
+   border-right: 0px;
+   border-left: 0px;
+   margin: 53px 0px 37px 0px;
+
+}
+
+.signInPersonalized {
+   width: 280px;
+}
+
+#personalizedBox p:not(#newCostumerPersonalized) {
+   margin: 50px 0px 5px 0px;
+   color: white;
+}
+
+#newCostumerPersonalized {
+   margin: 5px 0px 32px 0px;
+}
+
+.newCostumer {
+   font-size: 12px;
+}
+
+#backTop {
+
+   width: 100%;
+   display: flex;
+   height: 60px;
+   color: white;
+   background-color: rgb(55 73 94);
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   font-family: 'Kdam Thmor Pro', Helvetica;
+   font-size: 13px;
+
+}
+
+#backTop:hover {
+   cursor: pointer;
+   background-color: rgb(74 97 125);
+}
+
+#infoBoxContainer {
+   width: 100%;
+   height: 330px;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: normal;
+   flex-wrap: wrap;
+   background-color: #303e4f;
+
+}
+
+#moreInfoBox {
+   min-width: 1000px;
+   height: auto;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: normal;
+   flex-wrap: wrap;
+   font-family: 'Kdam Thmor Pro', Helvetica;
+
+}
+
+.infoColumn {
+   width: 250px;
+   color: #e2dddd;
+   padding: 10px;
+   margin-top: 15px;
+
+}
+
+.infoColumn ul {
+   list-style: none;
+   padding-left: 0px;
+   font-size: 13px;
+
+}
+
+.infoColumn ul li:hover {
+   text-decoration: underline;
+   color: #e2dddd;
+   
+}
+
+.infoColumn h3 {
+   text-align: left;
+}
+
+
+#info4 {
+   width: 145px;
+}
+
+#changeItems {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-width: 900px;
+   background-color: #303e4f;
+   height: 130px;
+   font-family: 'Kdam Thmor Pro', Helvetica;
+   color: white;
+   border-top: 1px solid #ffffff3d;
+
+}
+
+#changeItems .logoBox img {
+   width: 140px;
+   height: 30px;
+}
+
+.containerFooter {
+
+   display: none;
+   width: 250px;
+   height: 275px;
+
+   position: absolute;
+   top: 3405.5px;
+   right: auto;
+   margin-left: 127px;
+
+   z-index: 1;
+
+}
+
+#showLangBtn:hover>.containerFooter {
+   display: block;
+}
+
+.btnFooter {
+   
+   width: 150px;
+   height: 35px;
+   border: 1px solid #aab8cb;
+   border-radius: 4px;
+   padding: 0px;
+   margin: 0px;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+#triangleFooter {
+   margin-left: 112px;
+}
+
+#logoBoxFooter {
+   margin: 0px 0px 0px 0px;
+   padding: 3px 137px 3px 6px;
+}
+
+#btnFooterBox {
+   width: 480px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   flex-direction: row;
+   color: #e2dddd;
+}
+
+#btnFooterBox img {
+
+
+   width: 15px;
+   height: 15px;
+}
+
+.btnBoxs {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.btnFooter i {
+   margin-right: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#setArrows {
+   width: 20px;
+   height: auto;
+   display: flex;
+   flex-wrap: wrap;
+   margin-left: 37px;
+}
+
+#setArrows span {
+   margin-top: 0px;
+   padding-top: 0px;
+   font-size: 20px;
+}
+
+.arrUp {
+   margin-bottom: -12px;
+   padding-bottom: 0px;
+}
+
+.arrDwn {
+   margin-top: -15px;
+   padding-top: 0px;
+}
+
+#btnText {
+   margin-left: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.btnFooter span {
+   font-size: 20px;
+}
+
+#creditsBox {
+   width: 100%;
+   height: 680px;
+   display: flex;
+   justify-content: center;
+   background-color: #131a22;
+   color: #e2DDDD;
+}
+
+#creditsContainer {
+   max-width: 1275px;
+   display: flex;
+   height: 590px;
+   font: 10px 'Kdam Thmor Pro', Helvetica;
+   flex-wrap: wrap;
+   margin-top: 12px;
+   justify-content: center;
+
+}
+
+
+.rowCredits {
+   height: 120px;
+   display: flex;
+   justify-content: center;
+
+}
+
+#box2 {
+   height: 275px;
+
+}
+
+.titleBox {
+   font-weight: bold;
+}
+
+.boxesDescrip {
+
+   width: 100px;
+   margin: 10px 25px 0px 25px;
+}
+
+
+.aFooter:link {
+   text-decoration: none;
+}
+
+a.aFooter:hover {
+   text-decoration: underline;
+   color: white;
+
+}
+
+.boxesDescrip .aFooter h5,
+p {
+   margin-left: 5px;
+   color: #e2dddd;
+   text-decoration: solid;
+}
+
+.boxesDescrip .aFooter h5 {
+   font-size: 12px;
+}
+
+.boxesDescrip .aFooter p {
+   font-size: 10px;
+   margin-top: -21px;
+}
+
+#amzSubs {
+   width: 125px;
+   margin-left: 5px;
+   margin-right: -52px;
+}
+
+
+.lastCol {
+   margin: 10px 40px 0px 10px;
+}
+
+#pillBox {
+   margin-left: 72px;
+   margin-right: 0px;
+}
+
+#row5Credits {
+   margin-left: -17px;
+}
+
+#signPBox {
+   margin-bottom: 35px;
+   cursor: pointer;
+}
+
+#conditionsOfUse {
+   width: 720px;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 3px;
+}
+
+#conditionsOfUse * {
+   margin-right: 20px;
+   color: #e2dddd;
+   text-decoration: solid;
+}
+
+#conditionsOfUse .CoU:hover {
+   text-decoration: underline;
+}
+
+#locationPopBox {
+
+   display: none;
+   position: absolute;
+   width: 405px;
+   height: 455px;
+   border: 1px solid;
+   border-radius: 10px;
+   box-shadow: 0px 1px  15px #00000073;
+   background-color: white;
+   margin-left: 39px;
+   margin-top: -230px;
+   top: 50%;
+
+   z-index: 4;
+   font-family: 'Kdam Thmor Pro', Helvetica;
+   overflow: hidden;
+   
+
+}
+
+#headerBox {
+   width: 100%;
+   height: 55px;
+   padding-left: 40px;
+   background-color: #80808026;
+   border-bottom: 1px solid black;
+   margin-top: 0px;
+   display: flex;
+   align-items: center;
+   font-size: 15px;
+
+}
+
+#bodyBox {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+#paragraphBtnBox {
+   font-size: 12px;
+   /* padding-left: 10px; */
+   width: 330px;
+   border-bottom: 1px solid;
+   margin-top: 0px;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+
+}
+
+#paragraphBtnBox p {
+   color: black;
+}
+
+#signAdressBtn {
+
+   background-color: orange;
+   color: black;
+   font: 12px 'Kdam Thmor Pro', Helvetica;
+   width: 100%;
+   height: 34px;
+   border-radius: 7px;
+   border: 0px;
+   margin-bottom: 15px;
+   cursor: pointer;
+}
+
+.middleText {
+
+   background-color: white;
+   color: black;
+   font-size: 12px;
+   width: 132px;
+   height: 20px;
+   text-align: center;
+   margin: -11px 0px 0px -4px;
+}
+
+#chooseCountryBox {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   /* border: 1px solid; */
+   margin-top: 7px;
+   width: 100%;
+}
+
+#zipBox {
+
+   font-size: 12px;
+   width: 330px;
+   margin-top: 0px;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   border-bottom: 1px solid;
+   font: 12px 'Kdam Thmor Pro', Helvetica;
+}
+
+#zipBox input {
+   width: 217px;
+   height: 32px;
+   border: 1px solid;
+   border-radius: 7px;
+   margin-right: 7px;
+
+}
+
+#zipBox button {
+   width: 95px;
+   height: 35px;
+   border: 1px solid;
+   border-radius: 7px;
+   margin-bottom: 20px;
+   font: 12px 'Kdam Thmor Pro', Helvetica;
+   background-color: #f0f0f084;
+   cursor: pointer;
+}
+
+#zipBox button:hover {
+
+   background-color: #f0f0f0dd;
+
+}
+
+#or {
+   background-color: white;
+   color: black;
+   font-size: 12px;
+   width: 24px;
+   height: 20px;
+   text-align: center;
+   margin: -108px 0px 0px 8px;
+
+}
+
+#countryBox {
+  width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-top: 15px;
+}
+
+#selectCountry {
+
+   background-color: #80808026;
+
+   width: 318px;
+   height: 34px;
+   border-radius: 7px;
+   margin-bottom: 15px;
+   display: flex;
+   align-items: center;
+   border: 1px solid #8080808f;
+   border-bottom: 0px;
+   box-shadow: 0px 2px 5px #8080809e;
+
+}
+
+#selectCountry:hover{
+
+   background-color: #80808047;
+   cursor: pointer;
+
+}
+
+#selectCountry p {
+   display: inline-block;
+   color: black;
+   text-align: left;
+   padding-left: 5px;
+   min-width: 155px;
+   font-family: 'Kdam Thmor Pro', Helvetica;
+
+}
+
+#selectCountry i {
+
+   color: black;
+   margin-left: 39%;
+
+}
+
+
+#doneBtn {
+
+   background-color: orange;
+   color: black;
+   font: 12px 'Kdam Thmor Pro', Helvetica;
+   width: 22%;
+   height: 34px;
+   border-radius: 7px;
+   border: 0px;
+   margin-left: 225px;
+   cursor: pointer;
+
+}
+
+#signAdressBtn:hover,
+#doneBtn:hover {
+
+   background-color: #e99700;
+
+}
+
+#zipInput {
+
+   font-size: 15px;
+   font-family: 'Kdam Thmor Pro', Helvetica;
+
+}
+
+input[type=text] {
+
+   padding-left: 7px;
+   outline-color: lightblue;
+}
+
+
+
+#countryListContainer{
+
+   display: none;
+   width: auto;
+   height: 344px;
+   border: 1px solid;
+   border-radius: 10px;
+   background-color: white;
+   overflow: hidden;
+   top: 65px;
+   position: absolute;
+
+}
+
+#countryListBox{
+
+   width: 380px;
+   height: 341px;
+   overflow-y: scroll;
+   overflow-x: hidden;
+   margin-top: 1px;
+   
+}
+.pCountry{
+
+   min-width: 341px;
+   height: 24px;
+   overflow: hidden;
+   font-size: 13px;
+   padding-left: 20px;
+   display: flex;
+   align-items: center;
+   margin: 0px 0px 0px -1px;
+   color: black;
+   border: 1px solid transparent;
+  
+}
+
+.pCountry:hover{
+
+   background-color: #80808021;
+   border: 1px solid gray;
+   cursor: pointer;
+
+}
+
+.firstElement{
+
+   margin-top: 11px;
+
+}
+
+.lastElement{
+
+   margin-bottom: 11px;
+   
+}

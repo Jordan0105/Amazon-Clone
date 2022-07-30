@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Amazon Clone</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/5a529ae954.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <div class="navContainer">
+
+                <div class="nav-bar">
+
+                    <div class="logo_Delivery">
+                        <div class="logoBox">
+
+                            <img src="https://seeklogo.com/images/A/amazon-logo-3F973DA9CA-seeklogo.com.png" alt="Logo"
+                                class="logo">
+                        </div>
+
+                        <span class="country">
+                            <p>Deliver to</p>
+                             <i class="fa-solid fa-location-dot"> </i> 
+                             <span id="countrySpan">Nicaragua</span>
+                        </span>
+                    </div>
+
+                    <div class="searchBox">
+                        <input class="searchBar" type="search" placeholder='Search a product...'>
+
+                        <div class="searchIcon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+
+                    </div>
+
+                    <div id="changeLangBox" class="changeLang">
+                        <i class="fa-solid fa-globe fa-xl"></i>
+                        <span class="material-symbols-outlined"> arrow_drop_down </span>
+
+                        <div class="container">
+
+                            <div class="triangle"></div>
+
+                            <div class="box">
+
+
+                                <div class="currentLanguage">
+                                    <p>
+                                        Change Language
+                                    </p>
+                                    <a href="https://www.amazon.com/hz/cs/help?ref_=icp_language_help&nodeId=202085910">Learn more</a>
+
+
+
+                                    <div class="engBox">
+
+                                        <input type="radio" name="English" id="engLang">
+                                        <label for="engLang" id="currentLabel">English - EN</label>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="chooseLanguage">
+
+                                    <div class="spnBox">
+
+                                        <input type="radio" name="Español" id="spaLang">
+                                        <label for="spaLang">Español - ES</label>
+
+                                    </div>
+
+                                    <div class="arbBox">
+
+                                        <input type="radio" name="Arabian" id="arabLang">
+                                        <label for="arabLang">العربية - AR</label>
+
+                                    </div>
+
+                                    <div class="deutBox">
+
+                                        <input type="radio" name="Deutch" id="deutLang">
+                                        <label for="deutLang">Deutsch - DE</label>
+
+                                    </div>
+
+                                    <div class="heBox">
+
+                                        <input type="radio" name="Hebrew" id="hebrLang">
+                                        <label for="hebrLang">עִברִית - HE</label>
+
+                                    </div>
+
+                                    <div class="korBox">
+
+                                        <input type="radio" name="Korean" id="korLang">
+                                        <label for="korLang">한국어 - KO</label>
+
+                                    </div>
+
+                                    <div class="znSBox">
+
+                                        <input type="radio" name="Chinese Simplified" id="chSLang">
+                                        <label for="chSLang">中文 (简体) - ZN</label>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="currentCurrency">
+                                    <p>
+                                        Change currency
+                                    </p>
+                                    <a href="https://www.amazon.com/hz/cs/help?ref_=icp_currency_help&nodeId=GDX4RY8D2M85FHLD">Learn more</a>
+
+                                    <p>$ - USD - US Dollar</p>
+                                    <a href="https://www.amazon.com/customer-preferences/country?ref_=icp_lop_mop_chg_ais&preferencesReturnUrl=/" id="changeLnk">Change</a>
+
+                                </div>
+
+                                <div class="changeCountry">
+
+                                    <span id="changeCountrySpan">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/206/206626.png" alt="USA Flag">
+                                        <p>You are shopping on Amazon.com</p>
+                                    </span>
+
+                                    <a href="https://www.amazon.com/customer-preferences/country?ref_=icp_lop_mop_chg_ais&preferencesReturnUrl=/">Change country/region</a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div id="signInBox" class="signIn">
+                        Hello, Sing in <br> Account & List
+                        <span class="material-symbols-outlined"> arrow_drop_down </span>
+
+                        <div class="containerSign">
+                            <div class="triangle2"></div>
+                            <div class="boxSign">
+
+                                <div class="signBoxHover">
+                                    <div class="btnBox">
+                                        <button class="btnSignIn" id="btnSignAccount">Sign in securely</button>
+                                    </div>
+
+                                    <div class="newCostumer">
+                                        <p>New Costumer? <a
+                                                href="http://https://www.amazon.com/ap/register?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26ref_%3Dnav_newcust&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&">Start
+                                                here.</a> </p>
+                                    </div>
+                                </div>
+
+                                <div class="listContainer">
+                                    <div class="urListBox">
+                                        <h3>Your Lists</h3>
+                                        <ul class="listBox">
+                                            <li>Create List</li>
+                                            <li>Find a List or Registry</li>
+                                            <li>AmazonSmile Charity List</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="urAccount">
+                                        <h3>Your Account</h3>
+                                        <ul class="listAccount">
+                                            <li>Account</li>
+                                            <li>Orders</li>
+                                            <li>Recommendations</li>
+                                            <li>Browsing History</li>
+                                            <li>Watchlist</li>
+                                            <li>Video Purchases and Rentals</li>
+                                            <li>Kindle Unlimited</li>
+                                            <li>Content & Devices</li>
+                                            <li>Suscribe & Save Items</li>
+                                            <li>Memberships & Suscriptions</li>
+                                            <li>Music Library</li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div id="returnOrders">
+                        Return <br> & Orders
+                    </div>
+
+                    <div id="cartShop">
+                        <i class="fa-solid fa-cart-shopping fa-xl"></i>
+                        <p id="cartText"><span id="cartAmount">0</span> <br>Cart</p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+            </div>
+
+            <div class="navMain">
+                <div class="navOp">
+
+                    <li class="op openBoxBtn"><i class="fa-solid fa-bars"></i>
+                        <p id="allBtn">All</p>
+                    </li>
+
+                    <div id="shadow"></div>
+
+                    <div id="allListContainer">
+                        <div id="containerHeader">
+
+                            <h2>Hello, Sign in</h2>
+
+                        </div>
+                        <div id="containerList">
+
+
+
+                            <div id="containerContent">
+
+                                <div class="allContent digitalContent">
+                                    <h3>Digital Content & Devices</h3>
+
+                                    <div class="digitalOp containerOp">
+
+                                        <p>Amazon Music <i class="fa-solid fa-angle-right"></i></p>
+                                        <p>Kindle E-readers & Books <i class="fa-solid fa-angle-right"></i></p>
+                                        <p>Appstore for Android <i class="fa-solid fa-angle-right"></i></p>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="allContent shopDepContent">
+                                    <h3>Shop By Department</h3>
+
+                                    <div class="departOp containerOp">
+                                        <p>Electronics <i class="fa-solid fa-angle-right"></i></p>
+                                        <p>Computers <i class="fa-solid fa-angle-right"></i></p>
+                                        <p>Smart Home <i class="fa-solid fa-angle-right"></i></p>
+                                        <p>Arts & Crafts <i class="fa-solid fa-angle-right"></i></p>
+                                        <p class="seeAll">See All <i class="fa-solid fa-angle-down"></i></p>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="allContent programsFeat">
+                                    <h3>Programs and Features</h3>
+                                    <div class="programsOp containerOp">
+
+                                        <p>Gift Cards <i class="fa-solid fa-angle-right"></i></p>
+                                        <p>#FoundItOnAmazon <i class="fa-solid fa-angle-right"></i></p>
+                                        <p>Amazon Live <i class="fa-solid fa-angle-right"></i></p>
+                                        <p>International Shopping <i class="fa-solid fa-angle-right"></i></p>
+                                        <p class="seeAll">See All <i class="fa-solid fa-angle-down"></i></i></p>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="allContent helpSett">
+                                    <h3>Help & Settings</h3>
+
+                                    <div class="containerOp helpOp">
+                                        <p>Your Account</p>
+                                        <p class="langOpList">English <i class="fa-solid fa-earth-americas"></i></p>
+
+
+                                        <p class="flagOpList">
+                                            <img src="https://cdn-icons-png.flaticon.com/512/206/206626.png"
+                                                alt="USA Flag">
+                                            United States</p>
+                                        <p>Customer Services</p>
+                                        <p class="btnSignIn" id="signPBox">Sign In</p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div id="xBtn">
+
+                            <i class="fa-solid fa-xmark fa-2x"></i>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <a class="opLink" href="https://www.amazon.com/gp/goldbox"><li class="op">Today's Deals</li></a>
+                    <a class="opLink" href="https://www.amazon.com/gift-cards/b/?ie=UTF8&node=2238192011&ref_=nav_cs_gc"><li class="op">Gift Cards</li></a>
+                    <a class="opLink" href="https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fgp%2Fbuyagain%3Fie%3DUTF8%26ref_%3Dnav_cs_buy_again&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"><li class="op">Buy Again</li></a>
+                    <a class="opLink" href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508510&ref_=nav_cs_customerservice"><li class="op bigBoxOp">Customer Service</li></a>
+                    <a class="opLink" href="https://www.amazon.com/gp/history?ref_=nav_cs_timeline"><li class="op bigBoxOp">Browing History</li></a>
+                    <a class="opLink" href="https://www.amazon.com/gp/browse.html?node=16115931011&ref_=nav_cs_registry"><li class="op">Registry</li></a>
+                    <a class="opLink" href="https://www.amazon.com/b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref_=nav_cs_sell"><li class="op">Sell</li></a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main id="main">
+
+        <div class="mainConteiner">
+            <div class="mainContent">
+
+                <div id="locationPopBox">
+                    <div id="headerBox">
+                        <h4>Choose your location</h4>
+                    </div>
+                    <div id="bodyBox">
+                        <div id="paragraphBtnBox">
+                            <p>Delivery options and delivery speeds may vary for different locations</p>
+
+                            <button id="signAdressBtn" class="btnSignIn">Sign in to see your adresses</button>
+                        </div>
+                        <p class="middleText">or enter a US zip code</p>
+                        <div id="chooseCountryBox">
+                            <div id="zipBox">
+                                <input type="text" id="zipInput">
+                                <button id="applyBtn" class="closeDeliverTo">Apply</button>
+                            </div>
+                            <div id="countryBox">
+
+                                <button id="selectCountry">
+                                    <p id="currentlyCountry">Spain</p>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </button>
+                                <button id="doneBtn" class="closeDeliverTo">Done</button>
+
+                            </div>
+
+                            <div id="countryListContainer">
+                                <div id="countryListBox">
+                                    <p class="pCountry firstElement" id="country1">Australia</p>
+                                    <p class="pCountry" id="country2">Austria</p>
+                                    <p class="pCountry" id="country3">Belgium</p>
+                                    <p class="pCountry" id="country4">Brazil</p>
+                                    <p class="pCountry" id="country5">Canada</p>
+                                    <p class="pCountry" id="country6">China</p>
+                                    <p class="pCountry" id="country7">Croatia</p>
+                                    <p class="pCountry" id="country8">Denmark</p>
+                                    <p class="pCountry" id="country9">Egypt</p>
+                                    <p class="pCountry" id="country10">Finland</p>
+                                    <p class="pCountry" id="country11">France</p>
+                                    <p class="pCountry" id="country12">Germany</p>
+                                    <p class="pCountry" id="country13">Hungary</p>
+                                    <p class="pCountry" id="country14">India</p>
+                                    <p class="pCountry" id="country15">Italy</p>
+                                    <p class="pCountry" id="country16">Japan</p>
+                                    <p class="pCountry" id="country17">Luxembourg</p>
+                                    <p class="pCountry" id="country18">Mexico</p>
+                                    <p class="pCountry" id="country19">Netherlands</p>
+                                    <p class="pCountry" id="country20">Poland</p>
+                                    <p class="pCountry" id="country21">Portugal</p>
+                                    <p class="pCountry" id="country22">South Korea</p>
+                                    <p class="pCountry" id="country23">Thailand</p>
+                                    <p class="pCountry" id="country24">Ukraine</p>
+                                    <p class="pCountry" id="country25">United Arab Emirates</p>
+                                    <p class="pCountry" id="country26">United Kingdom</p>
+                                    <p class="pCountry lastElement" id="country27">United States of America</p>
+                            </div>
+                            </div>
+                        </div>
+                        <p id="or">or</p>
+                    </div>
+                </div>
+
+                <button class="btnleft">
+
+                    <span class="material-symbols-outlined">
+                        arrow_back_ios
+                    </span>
+
+                </button>
+                <button class="btnright">
+
+                    <span class="material-symbols-outlined">
+                        arrow_forward_ios
+                    </span>
+
+                </button>
+
+                <div class="cardsContainer">
+
+                    <div class="cards firstCard" id="gamingAccesories">
+
+                        <h3>Gaming Accesories</h3>
+                        <img src="https://res.cloudinary.com/teepublic/image/private/s--Jji6ATH8--/t_Resized%20Artwork/c_fit,g_north_west,h_1054,w_1054/co_ffffff,e_outline:53/co_ffffff,e_outline:inner_fill:53/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_auto,h_630,q_90,w_630/v1623911955/production/designs/22582107_0.jpg"
+                            alt="Headsets">
+                        <img src="https://img.freepik.com/free-vector/simple-cartoon-keyboard-icon_576934-21.jpg"
+                            alt="Keyboards">
+                        <p>Headsets</p>
+                        <p>Keyboards</p>
+                        <img src="https://media.istockphoto.com/vectors/computer-mouse-doodle-vector-id1209984099?k=20&m=1209984099&s=612x612&w=0&h=doEeRg-X8k2G8gC9VXDQRoCzeEgrBAmTMHrRW0HFBVc="
+                            alt="Mice Computer">
+                        <img src="https://img.freepik.com/free-vector/cool-astronaut-chilling-sitting-gaming-chair-cartoon-vector-illustration_509778-27.jpg"
+                            alt="Chairs">
+                        <p>Computer mice</p>
+                        <p>Chairs </p>
+                        <div class="seeMore"><a href="https://www.amazon.com/b?node=23508887011&pf_rd_r=SB3NQHENMVNCE23YS23R&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pd_rd_r=e1af3a0c-cd37-450d-86b3-5ee0c6f8750d&pd_rd_w=1614o&pd_rd_wg=mewLn&ref_=pd_gw_unk">See more</a> </div>
+
+                    </div>
+
+                    <div class="cards cardsCategory" id="shopCategory">
+
+                        <h3>Shop By Category</h3>
+
+                            <img src="https://img.freepik.com/free-vector/cute-laptop-cartoon_274619-681.jpg"
+                                alt="Computer">
+
+                        <img src="https://pioneerpages.net/wp-content/uploads/2022/03/istockphoto-1208386205-170667a.jpg"
+                            alt="Videogames">
+                        <p>Computer & Accesories</p>
+                        <p>Video Games</p>
+                        <img src="https://cdn5.vectorstock.com/i/1000x1000/54/44/baby-milk-bottle-with-pacifier-and-clothespin-vector-26155444.jpg"
+                            alt="Baby">
+                        <img src="https://thumbs.dreamstime.com/b/heap-toys-eps-vector-illustration-48098461.jpg"
+                            alt="Toys">
+                        <p>Baby</p>
+                        <p>Toys & Games</p>
+                        <div class="shopNow"><a href="https://www.amazon.com/b?node=17938598011&pf_rd_r=SB3NQHENMVNCE23YS23R&pf_rd_p=e5b0c85f-569c-4c90-a58f-0c0a260e45a0&pd_rd_r=e1af3a0c-cd37-450d-86b3-5ee0c6f8750d&pd_rd_w=SLouv&pd_rd_wg=mewLn&ref_=pd_gw_unk">Shop now</a> </div>
+                    </div>
+
+                    <div class="cards" id="cardsDealsProm">
+
+                        <h3>Deals & Promotions</h3>
+                        <a href="https://www.amazon.com/b/ref=AIS_GW_deals?node=15529609011&pf_rd_r=27PT6TWFC3A4TPA2TRJB&pf_rd_p=34d1e0cd-1b67-4b43-8160-2f9160652061&pd_rd_r=f1c9fad6-5328-4013-874e-62931cdb7955&pd_rd_w=liOYg&pd_rd_wg=8yQh4&ref_=pd_gw_unk">
+                        <img src="https://cdn3.vectorstock.com/i/1000x1000/72/92/big-sale-promotion-icon-vector-18247292.jpg"
+                            alt="Deals">
+                        </a>
+                        <div class="shopNow"><a href="https://www.amazon.com/b/ref=AIS_GW_deals?node=15529609011&pf_rd_r=27PT6TWFC3A4TPA2TRJB&pf_rd_p=34d1e0cd-1b67-4b43-8160-2f9160652061&pd_rd_r=f1c9fad6-5328-4013-874e-62931cdb7955&pd_rd_w=liOYg&pd_rd_wg=8yQh4&ref_=pd_gw_unk">Shop now</a> </div>
+                    </div>
+
+                    <div class="cards" id="signDeliveryContainer">
+
+                        <div id="cardsSignIn">
+                            <h3>Sign in for the best <br>experience</h3>
+                            <button class="btnSignIn btnSignInCard">Sign in securely</button>
+                        </div>
+
+                        <a href="https://www.amazon.com/b?node=20338496011&pf_rd_r=SB3NQHENMVNCE23YS23R&pf_rd_p=696ad652-44a2-497e-883b-b1ed606f2732&pd_rd_r=e1af3a0c-cd37-450d-86b3-5ee0c6f8750d&pd_rd_w=l0sw5&pd_rd_wg=mewLn&ref_=pd_gw_unk">
+                        <div id="cardsDelivery"></div>
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- Space -->
+
+                    <div class="cards cards2 firstCard" id="cardsElectronics">
+
+                        <h3>Electronics</h3>
+                        <a
+                            href="https://www.amazon.com/b?node=16225009011&pf_rd_r=WJTVG38ZTQRJJWP5PX1W&pf_rd_p=5232c45b-5929-4ff0-8eae-5f67afd5c3dc&pd_rd_r=1670d36d-51de-4991-96a8-5c7e7976a15e&pd_rd_w=E1ZXI&pd_rd_wg=HE7UC&ref_=pd_gw_unk">
+                            <img src="https://png.pngtree.com/png-clipart/20190628/original/pngtree-cartoon-minimalist-computer-camera-electronics-elements-png-image_4037164.jpg"
+                                alt="Electronics">
+                            <div class="seeMore bottomText"><a href="https://www.amazon.com/b?node=16225009011&pf_rd_r=WJTVG38ZTQRJJWP5PX1W&pf_rd_p=5232c45b-5929-4ff0-8eae-5f67afd5c3dc&pd_rd_r=1670d36d-51de-4991-96a8-5c7e7976a15e&pd_rd_w=E1ZXI&pd_rd_wg=HE7UC&ref_=pd_gw_unk">See more</a> </div>
+                        </a>
+
+                    </div>
+
+                    <div class="cards cards2" id="cardsHealth">
+
+                        <h3>Health & Personal Care</h3>
+
+                        <a
+                            href="https://www.amazon.com/s?i=specialty-aps&bbn=16225006011&rh=n%3A%2116225006011%2Cn%3A3777891&ref=nav_em__nav_desktop_sa_intl_personal_care_0_2_11_9&pf_rd_r=WJTVG38ZTQRJJWP5PX1W&pf_rd_p=eab778f7-37cf-4c6b-9552-5370900592a9&pd_rd_r=1670d36d-51de-4991-96a8-5c7e7976a15e&pd_rd_w=zXmDi&pd_rd_wg=HE7UC&ref_=pd_gw_unk">
+                            <img src="https://static.vecteezy.com/system/resources/previews/002/525/501/non_2x/oral-and-teeth-care-set-of-dental-cleaning-tools-toothbrush-electric-toothbrush-and-toothpaste-mouthwash-dental-floss-isolated-dental-hygiene-flat-style-illustration-free-vector.jpg"
+                                alt="Health & Care">
+                        </a>
+                        <div class="shopNow bottomText"><a href="https://www.amazon.com/s?i=specialty-aps&bbn=16225006011&rh=n%3A%2116225006011%2Cn%3A3777891&ref=nav_em__nav_desktop_sa_intl_personal_care_0_2_11_9&pf_rd_r=WJTVG38ZTQRJJWP5PX1W&pf_rd_p=eab778f7-37cf-4c6b-9552-5370900592a9&pd_rd_r=1670d36d-51de-4991-96a8-5c7e7976a15e&pd_rd_w=zXmDi&pd_rd_wg=HE7UC&ref_=pd_gw_unk">Shop now</a> </div>
+
+                    </div>
+
+                    <div class="cards cards2" id="cardsBeauty">
+
+                        <h3>Beauty Picks</h3>
+
+                        <a
+                            href="https://www.amazon.com/b/?node=16225006011&pf_rd_r=8SJK5065PK87YK4TC9B3&pf_rd_p=375e1985-8c9f-4c8f-a75e-0303cb92af37&pd_rd_r=f221f5e9-8fa4-4019-88c8-b85718522ff6&pd_rd_w=VsKMc&pd_rd_wg=IcoD6&ref_=pd_gw_unk">
+                            <img src="https://cdn.store-assets.com/s/368144/f/4987205.png" alt="Beauty">
+                        </a>
+                        <div class="shopNow bottomText"><a href="https://www.amazon.com/b/?node=16225006011&pf_rd_r=F9P4HDAM1SJWKA2FCGMZ&pf_rd_p=4a5ac24a-2f14-4296-8a03-0c034c0a7904&pd_rd_r=6bfa14fc-bd84-4099-a070-9aa6fc799d14&pd_rd_w=IEX8E&pd_rd_wg=51d7d&ref_=pd_gw_unk">Shop now</a> </div>
+
+                    </div>
+
+                    <div class="cards cards2" id="cardsPcAccesories">
+
+                        <h3>Computer & Accesories</h3>
+                        <a
+                            href="https://www.amazon.com/b?node=16225007011&pf_rd_r=KP7VXJ6NGFMM0JBEBF2R&pf_rd_p=6b30eb15-a900-4294-9772-db8876444356&pd_rd_r=43c8159f-5ddb-4c39-b291-1e6e80e32ed9&pd_rd_w=7ZZQy&pd_rd_wg=8QujV&ref_=pd_gw_unk">
+                            <img src="https://thumbs.dreamstime.com/b/computer-hardwares-components-accessories-cartoon-illustrati-illustration-84566917.jpg"
+                                alt="PC Accesories">
+                        </a>
+                        <div class="shopNow bottomText"><a href="https://www.amazon.com/b?node=16225007011&pf_rd_r=KP7VXJ6NGFMM0JBEBF2R&pf_rd_p=6b30eb15-a900-4294-9772-db8876444356&pd_rd_r=43c8159f-5ddb-4c39-b291-1e6e80e32ed9&pd_rd_w=7ZZQy&pd_rd_wg=8QujV&ref_=pd_gw_unk">Shop now</a> </div>
+
+                    </div>
+                </div>
+
+
+
+                <button id="leftbtn" class="btnCarroussel"><span class="material-symbols-outlined">
+                        arrow_back_ios
+                    </span></button>
+
+                <div id="carroussel">
+
+                    <div id="topBooks">
+                        <h3>Top Sellers in Books for you</h3>
+                    </div>
+
+                    <div id="containerBox">
+
+                        <div id="moveBox">
+
+                            <div id="carr1" class="carr">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/81a4kCNuH+L.jpg"
+                                    alt="The Fault in Our Stars">
+                            </div>
+                            <div id="carr3" class="carr">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/A17ol+VOLhL.jpg"
+                                    alt="All the Bright Places">
+                            </div>
+                            <div id="carr2" class="carr">
+                                <img src="https://m.media-amazon.com/images/M/MV5BNjRhNjVlYTgtODZiOS00OTVhLWE4ZTItZjc3MTFiYWY1YjI5L2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_.jpg"
+                                    alt="Around the World in 80 Days">
+                            </div>
+                            <div id="carr4" class="carr">
+                                <img src="https://miro.medium.com/max/1000/1*J3IjizvASYlzW_vZzDAFkQ.jpeg"
+                                    alt="The Boy in the Striped Pajamas">
+                            </div>
+                            <div id="carr5" class="carr">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/91D7JFhPgXL.jpg"
+                                    alt="Anne Frank´s Diary">
+                            </div>
+                            <div id="carr6" class="carr">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/81D0ziLvzwL.jpg"
+                                    alt="The Invisble Man">
+                            </div>
+                            <div id="carr7" class="carr">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/91jBfwPCeKL.jpg"
+                                    alt="Bird Box">
+                            </div>
+                            <div id="carr8" class="carr">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/A1I2Kx625BL.jpg"
+                                    alt="Divine Comedy">
+                            </div>
+                            <div id="carr9" class="carr">
+                                <img src="https://m.media-amazon.com/images/I/51cYrYjR24L._AC_SY780_.jpg"
+                                    alt="Five Feet Apart">
+                            </div>
+                            <div id="carr10" class="carr">
+                                <img src="https://dedalusreadingclub.files.wordpress.com/2017/01/6a00e5509ea6a1883401bb0825f7c6970d.jpg"
+                                    alt="The Picture of Dorian Gray">
+                            </div>
+                            <div id="carr11" class="carr">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/71OZY035QKL.jpg"
+                                    alt="The Little Prince">
+                            </div>
+                            <div id="carr12" class="carr">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/51HTRsEM7xL._SX400_BO1,204,203,200_.jpg"
+                                    alt="The Catcher in the Rye">
+                            </div>
+                            <div id="carr13" class="carr">
+                                <img src="https://almabooks.com/wp-content/uploads/2016/10/9781847493699.jpg"
+                                    alt="Pride and Prejudice">
+                            </div>
+                            <div id="carr14" class="carr">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/51NOV2x7XGL._SX323_BO1,204,203,200_.jpg"
+                                    alt="The Thousand Nights and One Night">
+                            </div>
+                            <div id="carr15" class="carr">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/81iqZ2HHD-L.jpg"
+                                    alt="Harry Potter and the Sorcerer's Stone">
+                            </div>
+                            <div id="carr16" class="carr">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/71CcO-jvRUL.jpg"
+                                    alt="Crime and Punishment">
+                            </div>
+                            <div id="carr17" class="carr">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/81adkKbGZgL.jpg"
+                                    alt="Angels and Demons">
+                            </div>
+                            <div id="carr18" class="carr">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/91hPXkwnaeL.jpg"
+                                    alt="Game of Thrones">
+                            </div>
+                            <div id="carr19" class="carr">
+                                <img src="https://covers.alibrate.com/b/59872e8acba2bce50c1a6d96/b0bf30dd-8585-4a46-9229-c72a94282fbe/share"
+                                    alt="Cien Años de Soledad">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <button id="rightbtn" class="btnCarroussel"><span class="material-symbols-outlined">
+                        arrow_forward_ios
+                    </span>
+                </button>
+
+
+                <div class="cardsContainer2">
+
+                    <div class="cards cards2 firstCard cardsLine2" id="shopLaptops">
+                        <h3>Shop Laptops & Tablets</h3>
+                        <a
+                            href="https://www.amazon.com/s?bbn=16225007011&rh=n%3A16225007011%2Cn%3A13896617011&fst=as%3Aoff&qid=1602294815&rnid=16225007011&pf_rd_r=F9P4HDAM1SJWKA2FCGMZ&pf_rd_p=5b7fc375-ab40-4cc0-8c62-01d4de8b648d&pd_rd_r=5cdceff1-3148-460e-8b02-446c94e93d91&pd_rd_w=BoHab&pd_rd_wg=sBCjV&ref_=pd_gw_unk">
+                            <img src="https://previews.123rf.com/images/djvstock/djvstock1608/djvstock160809683/61600855-tablet-laptop-kawaii-cartoon-smiling-technology-icon-colorful-and-flat-design-vector-illustration.jpg"
+                                alt="Laptops and Tablets">
+                            <div class="seeMore bottomText"><a href="https://www.amazon.com/s?bbn=16225007011&rh=n%3A16225007011%2Cn%3A13896617011&fst=as%3Aoff&qid=1602294815&rnid=16225007011&pf_rd_r=F9P4HDAM1SJWKA2FCGMZ&pf_rd_p=5b7fc375-ab40-4cc0-8c62-01d4de8b648d&pd_rd_r=5cdceff1-3148-460e-8b02-446c94e93d91&pd_rd_w=BoHab&pd_rd_wg=sBCjV&ref_=pd_gw_unk">See more</a> </div>
+                        </a>
+
+                    </div>
+
+
+                    <div class="cards cards2 cardsLine2" id="stripLight">
+
+                        <h3>Create with strip lights</h3>
+                        <a
+                            href="https://www.amazon.com/s?k=strip+lighting&pf_rd_r=F9P4HDAM1SJWKA2FCGMZ&pf_rd_p=7738c60e-a1c7-4678-9812-5d82959d511c&pd_rd_r=5cdceff1-3148-460e-8b02-446c94e93d91&pd_rd_w=YgOsf&pd_rd_wg=sBCjV&ref_=pd_gw_unk">
+                            <img src="https://ae01.alicdn.com/kf/HTB1Ucboe8Gw3KVjSZFDq6xWEpXaH/Cartoon-Colorful-LED-Night-Lamp-Touch-Control-Silicone-Night-Light-Children-s-Toy-Lamp-For-Baby.jpg_Q90.jpg_.webp"
+                                alt="Strip Lights">
+                            <div class="seeMore bottomText"><a href="https://www.amazon.com/s?k=strip+lighting&pf_rd_r=F9P4HDAM1SJWKA2FCGMZ&pf_rd_p=7738c60e-a1c7-4678-9812-5d82959d511c&pd_rd_r=5cdceff1-3148-460e-8b02-446c94e93d91&pd_rd_w=YgOsf&pd_rd_wg=sBCjV&ref_=pd_gw_unk">See more</a> </div>
+                        </a>
+
+                    </div>
+
+                    <div class="cards cards2 cardsLine2" id="fitnessNeeds">
+
+                        <h3>For your Fitness Needs</h3>
+                        <a
+                        href="https://www.amazon.com/s?k=work+from+home+fitness&ref=nb_sb_noss_1&pf_rd_r=F9P4HDAM1SJWKA2FCGMZ&pf_rd_p=2c73d1ae-9178-422f-ae3b-1b5628bd95bb&pd_rd_r=5cdceff1-3148-460e-8b02-446c94e93d91&pd_rd_w=k5yvc&pd_rd_wg=sBCjV&ref_=pd_gw_unk">
+                        <img src="https://img.freepik.com/premium-vector/cute-panda-gym-illustration-animal-sport-flat-cartoon-style_138676-1160.jpg"
+                            alt="Fitness">
+                        <div class="seeMore bottomText"><a href="https://www.amazon.com/s?k=work+from+home+fitness&ref=nb_sb_noss_1&pf_rd_r=F9P4HDAM1SJWKA2FCGMZ&pf_rd_p=2c73d1ae-9178-422f-ae3b-1b5628bd95bb&pd_rd_r=5cdceff1-3148-460e-8b02-446c94e93d91&pd_rd_w=k5yvc&pd_rd_wg=sBCjV&ref_=pd_gw_unk">See more</a> </div>
+                        </a>
+                    </div>
+
+                    <div class="cards cards2 cardsLine2" id="kindleReaders">
+
+                        <h3>Kindle E readers</h3>
+                        <a
+                            href="https://www.amazon.com/s?k=Kindle+E-readers&ref=nb_sb_noss_2&pf_rd_r=F9P4HDAM1SJWKA2FCGMZ&pf_rd_p=b9deb6fa-f7f0-4f9b-bfa0-824f28f79589&pd_rd_r=5cdceff1-3148-460e-8b02-446c94e93d91&pd_rd_w=I95Je&pd_rd_wg=sBCjV&ref_=pd_gw_unk">
+                            <img src="https://i.pinimg.com/originals/5d/be/b2/5dbeb24b16cf7483bb4e844b52565497.jpg"
+                                alt="Electronics">
+
+                        </a>
+                        <div class="seeMore bottomText"><a href="https://www.amazon.com/s?k=Kindle+E-readers&ref=nb_sb_noss_2&pf_rd_r=F9P4HDAM1SJWKA2FCGMZ&pf_rd_p=b9deb6fa-f7f0-4f9b-bfa0-824f28f79589&pd_rd_r=5cdceff1-3148-460e-8b02-446c94e93d91&pd_rd_w=I95Je&pd_rd_wg=sBCjV&ref_=pd_gw_unk">See more</a> </div>
+                    </div>
+
+
+
+                    <!-- Space -->
+
+                    <div class="cards cards2 cardsLine2 firstCard" id="petSupplies">
+
+                        <h3>Shop Pet supplies</h3>
+                        <a
+                            href="https://www.amazon.com/s?k=pet+supplies&s=date-desc-rank&crid=3IF5TSVMY5YRB&qid=1632868254&sprefix=pet+sup%2Caps%2C268&ref=sr_st_date-desc-rank&pf_rd_r=F9P4HDAM1SJWKA2FCGMZ&pf_rd_p=ab475c0d-7817-4703-9d6d-f003bf2156bf&pd_rd_r=5cdceff1-3148-460e-8b02-446c94e93d91&pd_rd_w=f6nM9&pd_rd_wg=sBCjV&ref_=pd_gw_unk">
+                            <img src="https://www.pngitem.com/pimgs/m/62-624819_pet-store-cartoon-clipart-pet-shop-hd-png.png"
+                                alt="Pet Supplies">
+                        </a>
+                        <div class="shopNow bottomText"><a href="https://www.amazon.com/s?k=pet+supplies&s=date-desc-rank&crid=3IF5TSVMY5YRB&qid=1632868254&sprefix=pet+sup%2Caps%2C268&ref=sr_st_date-desc-rank&pf_rd_r=F9P4HDAM1SJWKA2FCGMZ&pf_rd_p=ab475c0d-7817-4703-9d6d-f003bf2156bf&pd_rd_r=5cdceff1-3148-460e-8b02-446c94e93d91&pd_rd_w=f6nM9&pd_rd_wg=sBCjV&ref_=pd_gw_unk">Shop now</a> </div>
+
+                    </div>
+
+                    <div class="cards cardsCategory cardsLine2" id="gamingMerchandise">
+
+                        <h3>Gaming merchandise</h3>
+
+                          
+                                <img src="https://alitools.io/en/showcase/image?url=https%3A%2F%2Fae01.alicdn.com%2Fkf%2FH464495e0b4764c43835df47a77d44039o.jpg"
+                                    alt="Gaming Shirts">
+
+
+                            <img src="https://www.vectorkhazana.com/assets/images/products/Car1.jpg"
+                                alt="Hats">
+                            <p>Apparel</p>
+                            <p>Hats</p>
+                            <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-ab27/k2-_2c9bf14f-c59b-4d9b-8d22-bc8cc19afeb7.v1.jpg"
+                                alt="Action Figures">
+                            <img src="https://ladybughandmadegifts.co.uk/wp-content/uploads/2021/01/PS-Blue-Games-Mug-Mockup-No-watermark.jpg"
+                                alt="Gaming Mugs">
+                            <p>Action Figures</p>
+                            <p>Mugs</p>
+                            <div class="shopNow"><a href="https://www.amazon.com/b?node=23508887011&pf_rd_r=F9P4HDAM1SJWKA2FCGMZ&pf_rd_p=09483392-9ac6-434a-a3d7-39d83662f54a&pd_rd_r=5cdceff1-3148-460e-8b02-446c94e93d91&pd_rd_w=505Qj&pd_rd_wg=sBCjV&ref_=pd_gw_unk">Shop now</a> </div>
+
+                    </div>
+
+                    <div class="cards cards2 cardsLine2" id="newToys">
+
+                        <h3>New arrivals in Toys</h3>
+
+                        <a
+                            href="https://www.amazon.com/gp/new-releases/toys-and-games">
+                            <img src="https://sc04.alicdn.com/kf/H150fa295ef2b4ae7a8aadd3e02e2be94D.jpg" alt="New Toys">
+                        </a>
+                        <div class="shopNow bottomText"><a href="https://www.amazon.com/gp/new-releases/toys-and-games">Shop now</a> </div>
+
+                    </div>
+
+                    <div class="cards cards2 cardsLine2" id="home&Kitchen">
+
+                        <h3>Home and kitchen essentials</h3>
+                        <a
+                            href="https://www.amazon.com/s/?_encoding=UTF8&rh=n%3A16225011011&fs=true&ref=lp_16225011011_sar&pf_rd_p=cc5289a7-fecd-4132-b150-9663b30926dd&pd_rd_wg=Ko56x&pf_rd_r=T4GGYCXMAV46HHWH60FX&content-id=amzn1.sym.cc5289a7-fecd-4132-b150-9663b30926dd&pd_rd_w=FfJZb&pd_rd_r=17cb15a7-b3be-4964-ac7c-e442a465d982&ref_=pd_gw_unk">
+                            <img src="https://www.nicepng.com/png/detail/332-3327472_kitchen-tools-clip-art-cozinha.png"
+                                alt="Kitchen Essentials">
+                        </a>
+                        <div class="shopNow bottomText"><a href="https://www.amazon.com/s/?_encoding=UTF8&rh=n%3A16225011011&fs=true&ref=lp_16225011011_sar&pf_rd_p=cc5289a7-fecd-4132-b150-9663b30926dd&pd_rd_wg=Ko56x&pf_rd_r=T4GGYCXMAV46HHWH60FX&content-id=amzn1.sym.cc5289a7-fecd-4132-b150-9663b30926dd&pd_rd_w=FfJZb&pd_rd_r=17cb15a7-b3be-4964-ac7c-e442a465d982&ref_=pd_gw_unk">Shop now</a> </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+    </main>
+    <footer>
+        <div id="signInPersonalized">
+            <div id="personalizedBox">
+                <p>See personalized recommendations</p>
+                <div class="btnBox">
+
+                    <button class="btnSignIn signInPersonalized">Sign in</button>
+                </div>
+                <div class="newCostumer">
+                    <p id="newCostumerPersonalized">New Costumer?
+                        <a
+                            href="https://www.amazon.com/ap/register?openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fref%3Drhf_sign_in&openid.assoc_handle=usflex">
+                            Start here.</a> </p>
+                </div>
+            </div>
+        </div>
+        <div id="backTop">
+            <p>Back to top</p>
+        </div>
+        <div id="infoBoxContainer">
+            <div id="moreInfoBox">
+
+                <div class="infoColumn" id="info1">
+                    <h3>Get to Know Us</h3>
+                    <ul class="listInfo">
+                        <li>Careers</li>
+                        <li>Blog</li>
+                        <li>About Amazon</li>
+                        <li>Investor Devices</li>
+                        <li>Amazon Devices</li>
+                        <li>Amazon Science</li>
+                    </ul>
+                </div>
+
+                <div class="infoColumn" id="info2">
+
+                    <h3>Make Money With Us</h3>
+
+
+
+                    <ul class="listInfo">
+                        <li>Sell products on Amazon</li>
+                        <li>Sell on Amazon Business</li>
+                        <li>Sell apps on Amazon</li>
+                        <li>Become an Affiliate</li>
+                        <li>Advertise Your Products</li>
+                        <li>Self-Publish with US</li>
+                        <li>Host an Amazon Hub</li>
+                        <li>See More Make Money With US</li>
+                    </ul>
+
+
+
+                </div>
+
+                <div class="infoColumn" id="info3">
+                    <h3>Amazon Payment Products</h3>
+                    <ul class="listInfo">
+                        <li>Amazon Business Card</li>
+                        <li>Blog</li>
+                        <li>Shop with Points</li>
+                        <li>Reload Your Balance</li>
+                        <li>Amazon Currency Converter</li>
+
+                    </ul>
+                </div>
+
+                <div class="infoColumn" id="info4">
+                    <h3>Let Us Help You</h3>
+                    <ul class="listInfo">
+                        <li>Amazon and COVID-19</li>
+                        <li>Your Account</li>
+                        <li>Your Orders</li>
+                        <li>Shipping Rates & Policies</li>
+                        <li>Returns & Replacements</li>
+                        <li>Manage Your Content and Devices</li>
+                        <li>Amazon Assistant</li>
+                        <li>Help</li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="changeItems">
+            <div class="logoBox" id="logoBoxFooter">
+                
+                <img src="https://seeklogo.com/images/A/amazon-logo-3F973DA9CA-seeklogo.com.png" alt="Logo"
+                    class="logo">
+            </div>
+
+            <div id="btnFooterBox">
+                <div class="btnFooter changeLang" id="showLangBtn">
+                    <div id="btnText">
+                        <i class="fa-solid fa-earth-americas"></i>
+                        English
+                    </div>
+                    <div id="setArrows">
+                        <span class="material-symbols-outlined arrUp">
+                            arrow_drop_up
+                        </span>
+                        <span class="material-symbols-outlined arrDwn">
+                            arrow_drop_down
+                        </span>
+
+                    </div>
+                    <div class="containerFooter">
+                        <div class="triangle" id="triangleFooter"></div>
+
+                        <div class="box" id="box2">
+
+
+                            <div class="currentLanguage">
+                                <p>
+                                    Change Language
+                                </p>
+                                <a href="https://www.amazon.com/hz/cs/help?ref_=icp_language_help&nodeId=202085910">Learn more</a>
+
+
+
+                                <div class="engBox">
+
+                                    <input type="radio" name="English" id="engLang">
+                                    <label for="engLang">English - EN</label>
+
+                                </div>
+
+                            </div>
+
+                            <div class="chooseLanguage">
+
+                                <div class="spnBox">
+
+                                    <input type="radio" name="Español" id="spaLang">
+                                    <label for="spaLang">Español - ES</label>
+
+                                </div>
+
+                                <div class="arbBox">
+
+                                    <input type="radio" name="Arabian" id="arabLang">
+                                    <label for="arabLang">العربية - AR</label>
+
+                                </div>
+
+                                <div class="deutBox">
+
+                                    <input type="radio" name="Deutch" id="deutLang">
+                                    <label for="deutLang">Deutsch - DE</label>
+
+                                </div>
+
+                                <div class="heBox">
+
+                                    <input type="radio" name="Hebrew" id="hebrLang">
+                                    <label for="hebrLang">עִברִית - HE</label>
+
+                                </div>
+
+                                <div class="korBox">
+
+                                    <input type="radio" name="Korean" id="korLang">
+                                    <label for="korLang">한국어 - KO</label>
+
+                                </div>
+
+                                <div class="znSBox">
+
+                                    <input type="radio" name="Chinese Simplified" id="chSLang">
+                                    <label for="chSLang">中文 (简体) - ZN</label>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="changeLang btnFooter ">
+
+                    <span class="material-symbols-outlined">
+                        attach_money
+                    </span>
+                    USD-U.S.Dollar
+                </div>
+
+                <div class="btnFooter" id="websiteCountry">
+
+                    <div class="flagOpList">
+                        <img src="https://cdn-icons-png.flaticon.com/512/206/206626.png" alt="USA Flag">
+                    </div>
+                    United States
+                </div>
+
+            </div>
+        </div>
+        <div id="creditsBox">
+            <div id="creditsContainer">
+
+
+                <div id="row1Credits" class="rowCredits">
+
+                    <div class="boxCol1 boxesDescrip">
+                        <a href="http://www.wikipedia.com" class="aFooter">
+                            <h5 class="titleBox"> Amazon Music</h5>
+                            <p>Stream millions <br>of songs</p>
+                        </a>
+                    </div>
+
+                    <div class="boxCol1 boxesDescrip row2">
+                        <a href="http://www.wikipedia.com" class="aFooter">
+                            <h5 class="titleBox"> Amazon <br>Advertising</h5>
+                            <p>Find, attract, and engage customers</p>
+                        </a>
+                    </div>
+
+                    <div class="boxCol1 boxesDescrip">
+                        <a href="http://www.wikipedia.com" class="aFooter">
+                            <h5 class="titleBox"> Amazon Drive</h5>
+                            <p>Cloud storage <br>from Amazon</p>
+                        </a>
+                    </div>
+
+                    <div class="boxCol1 boxesDescrip">
+                        <a href="http://www.wikipedia.com" class="aFooter">
+                            <h5 class="titleBox"> 6pm</h5>
+                            <p>Score deals <br>on fashion <br>brands</p>
+                        </a>
+                    </div>
+
+                    <div class="boxCol1 boxesDescrip">
+                        <a href="http://www.wikipedia.com" class="aFooter">
+                            <h5 class="titleBox"> AbeBooks</h5>
+                            <p>Books, art <br>& collectibles</p>
+                        </a>
+                    </div>
+
+                    <div class="boxCol1 boxesDescrip">
+                        <a href="http://www.wikipedia.com" class="aFooter">
+                            <h5 class="titleBox"> ACX</h5>
+                            <p>Audiobook Publishing <br>Made Easy</p>
+                        </a>
+                    </div>
+
+                    <div class="boxCol1 boxesDescrip">
+                        <a href="http://www.wikipedia.com" class="aFooter">
+                            <h5 class="titleBox"> Alexa</h5>
+                            <p>Actionable <br>Analytics <br>for the Web</p>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div id="row2Credits" class="rowCredits">
+
+                    <div class="boxCol2 boxesDescrip">
+                        <a href="http://www.wikipedia.com" class="aFooter">
+                            <h5 class="titleBox"> Sell on Amazon</h5>
+                            <p>Start a Selling Account</p>
+                        </a>
+                    </div>
+
+                    <div class="boxCol2 boxesDescrip row2">
+                        <a href="http://www.wikipedia.com" class="aFooter">
+                            <h5 class="titleBox"> Amazon Business</h5>
+                            <p>Everything For <br>Your Business</p>
+                        </a>
+                    </div>
+
+                    <div class="boxCol2 boxesDescrip">
+                        <a href="http://www.wikipedia.com" class="aFooter">
+                            <h5 class="titleBox"> Amazon Global</h5>
+                            <p>Ship Orders Internationally</p>
+                        </a>
+                    </div>
+
+                    <div class="boxCol2 boxesDescrip">
+                        <a href="http://www.wikipedia.com" class="aFooter">
+                            <h5 class="titleBox"> Home Services</h5>
+                            <p>Experienced <br>Pros <br>Happiness Guarantee</p>
+                        </a>
+                    </div>
+
+                    <div class="boxCol2 boxesDescrip">
+                        <a href="http://www.wikipedia.com" class="aFooter">
+                            <h5 class="titleBox"> Amazon Ignite</h5>
+                            <p>Sell your original Digital Educational Resources</p>
+                        </a>
+                    </div>
+
+                    <div class="boxCol2 boxesDescrip">
+                        <a href="http://www.wikipedia.com" class="aFooter">
+                            <h5 class="titleBox"> Amazon Web Services</h5>
+                            <p>Scalable Cloud Computing Services</p>
+                        </a>
+                    </div>
+
+                    <div class="boxCol2 boxesDescrip">
+                        <a href="http://www.wikipedia.com" class="aFooter">
+                            <h5 class="titleBox"> Audible</h5>
+                            <p>Listen to Books & <br>Original <br>Audio <br>Performances</p>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div id="row3Credits" class="rowCredits">
+
+                    <div class="boxCol3 boxesDescrip">
+                        <a href="http://www.wikipedia.com" class="aFooter">
+                            <h5 class="titleBox"> Book Depository</h5>
+                            <p>Books With Free Delivery <br>Worldwide</p>
+                        </a>
+                    </div>
+
+                    <div class="boxCol3 boxesDescrip row2">
+                        <a href="http://www.wikipedia.com" class="aFooter">
+                            <h5 class="titleBox"> Box Office Mojo</h5>
+                            <p>Find Movie <br>Box Office Data</p>
+                        </a>
+                    </div>
+
+                    <div class="boxCol3 boxesDescrip">
+                        <a href="http://www.wikipedia.com" class="aFooter">
+                            <h5 class="titleBox"> ComiXology</h5>
+                            <p>Thousand of <br>Digital Comics</p>
+                        </a>
+                    </div>
+
+                    <div class="boxCol3 boxesDescrip">
+                        <a href="http://www.wikipedia.com" class="aFooter">
+                            <h5 class="titleBox"> DPReview</h5>
+                            <p>Digital <br>Photography</p>
+                        </a>
+                    </div>
+
+                    <div class="boxCol3 boxesDescrip">
+                        <a href="http://www.wikipedia.com" class="aFooter">
+                            <h5 class="titleBox"> Fabric</h5>
+                            <p>Sewing, Quilting <br>& knitting</p>
+                        </a>
+                    </div>
+
+                    <div class="boxCol3 boxesDescrip">
+                        <a href="http://www.wikipedia.com" class="aFooter">
+                            <h5 class="titleBox"> Goodreads</h5>
+                            <p>Book reviews <br>& recommendations</p>
+                        </a>
+                    </div>
+
+                    <div class="boxCol3 boxesDescrip">
+                        <a href="http://www.wikipedia.com" class="aFooter">
+                            <h5 class="titleBox"> IMDb</h5>
+                            <p>Movies, TV <br>& Celebrities</p>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div id="row4Credits" class="rowCredits">
+
+
+                    <div class="boxCol4 boxesDescrip">
+                        <a href="http://www.wikipedia.com" class="aFooter">
+                            <h5 class="titleBox"> IMDbPro</h5>
+                            <p>Get Info Entertainment Professionals <br>Need</p>
+                        </a>
+                    </div>
+
+                    <div class="boxCol4 boxesDescrip row2">
+                        <a href="http://www.wikipedia.com" class="aFooter">
+                            <h5 class="titleBox"> Kindle Direct Publishing</h5>
+                            <p>Indie Digital & Print Publishing <br>Made Easy</p>
+                        </a>
+                    </div>
+
+                    <div class="boxCol4 boxesDescrip">
+                        <a href="http://www.wikipedia.com" class="aFooter">
+                            <h5 class="titleBox"> Prime Video <br>Direct</h5>
+                            <p>Video Distribution Made Easy</p>
+                        </a>
+                    </div>
+
+                    <div class="boxCol4 boxesDescrip">
+                        <a href="http://www.wikipedia.com" class="aFooter">
+                            <h5 class="titleBox"> Shopbop</h5>
+                            <p>Designer <br>Fashion Brands</p>
+                        </a>
+                    </div>
+
+                    <div class="boxCol4 boxesDescrip">
+                        <a href="http://www.wikipedia.com" class="aFooter">
+                            <h5 class="titleBox"> Woot!</h5>
+                            <p>Deals and Shenanigans</p>
+                        </a>
+                    </div>
+
+                    <div class="boxCol4 boxesDescrip">
+                        <a href="http://www.wikipedia.com" class="aFooter">
+                            <h5 class="titleBox"> Zappos</h5>
+                            <p>Shoes <br>& Clothing</p>
+                        </a>
+                    </div>
+
+                    <div class="boxCol4 boxesDescrip">
+                        <a href="http://www.wikipedia.com" class="aFooter">
+                            <h5 class="titleBox"> Ring</h5>
+                            <p>Smart Home Security Systems</p>
+                        </a>
+                    </div>
+
+
+                </div>
+
+                <div id="row5Credits" class="rowCredits">
+
+                    <div class="boxCol5 boxesDescrip lastCol">
+                        <a href="http://www.wikipedia.com" class="aFooter">
+                            <h5 class="titleBox"> eero WiFi</h5>
+                            <p>Stream 4K Video <br>in Every Room</p>
+                        </a>
+                    </div>
+
+                    <div class="boxCol5 boxesDescrip row2 lastCol">
+                        <a href="http://www.wikipedia.com" class="aFooter">
+                            <h5 class="titleBox"> Blink</h5>
+                            <p>Smart Security <br>for Every Home</p>
+                        </a>
+                    </div>
+
+                    <div class="boxCol5 boxesDescrip lastCol">
+                        <a href="http://www.wikipedia.com" class="aFooter">
+                            <h5 class="titleBox"> Neighbors App</h5>
+                            <p>Real-Time Crime <br>& Safety Alerts</p>
+                        </a>
+                    </div>
+
+                    <div class="boxCol5 boxesDescrip lastCol" id="amzSubs">
+                        <a href="http://www.wikipedia.com" class="aFooter">
+                            <h5 class="titleBox"> Amazon Subscription Boxes</h5>
+                            <p>Top subscription boxes - right to your door</p>
+                        </a>
+                    </div>
+
+                    <div class="boxCol5 boxesDescrip lastCol" id="pillBox">
+                        <a href="http://www.wikipedia.com" class="aFooter">
+                            <h5 class="titleBox"> PillPack</h5>
+                            <p>Pharmacy Simplified</p>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div id="conditionsOfUse" class="rowCredits">
+                    <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508088&ref_=footer_cou"
+                        class="CoU">Conditions of Use</a>
+                    <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=468496&ref_=footer_privacy"
+                        class="CoU">Privacy Notice</a>
+                    <a href="https://www.amazon.com/interestbasedads/ref=footer_iba" class="CoU">Interest-Based Ads</a>
+                    <p>© 1996-2022, Amazon.com, Inc. or its affiliates</p>
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <div id="generalShadowBox"></div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
