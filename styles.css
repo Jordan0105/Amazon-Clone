@@ -640,7 +640,7 @@ li:not(.navOp li):hover {
 
 }
 
-.opLink:link{
+.opLink:link, .opLink:visited{
 
    color: #e2dddd;
    text-decoration: none;
