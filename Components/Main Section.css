@@ -1,0 +1,235 @@
+@import "./Specific Components/Carroussel.css";
+
+/* Main Section */
+
+main {
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#mainContainerBox {
+    margin-top: 0px;
+    width: 1600px;
+    min-width: 1100px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+#mainContent {
+    width: 1440px;
+    min-width: 1160px;
+    height: 2555px;
+    background-image: url("https://wallpapers.com/images/high/amazon-digital-city-art-npcp6jc782ixp9zs.jpg");
+    background-size: 100% 490px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+
+#btnright,
+#btnleft {
+    width: 80px;
+    height: 330px;
+    top: 130px;
+    position: absolute;
+    padding: 16px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+}
+
+#btnright {
+    margin-left: 1180px;
+}
+
+#btnleft {
+    margin-right: 1180px;
+}
+
+.material-symbols-outlined {
+    font-size: 35px;
+    border: none;
+}
+
+/* Cards before the carroussel */
+
+.cardsContainer {
+    width: 1440px;
+    min-width: 1294px;
+    height: 1200px;
+    margin-top: 350px;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    flex-wrap: wrap;
+}
+
+.cards {
+    width: 295px;
+    height: 420px;
+    background-color: black;
+    margin: 0px 20px -315px 0px;
+    text-align: center;
+    transition: transform .8s;
+    font-family: 'Kdam Thmor Pro', "Lucida Console";
+}
+
+.cards:hover:not(#signDeliveryContainer),
+#cardsDelivery:hover,
+#cardsSignIn:hover {
+    transform: scale(1.05);
+}
+
+.cards h3 {
+    color: white;
+    height: 20px;
+}
+
+.cards img {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 0px;
+    margin-left: 10px;
+    object-fit: cover;
+    object-position: 10% 20%;
+}
+
+.cards p {
+    display: inline-block;
+    color: white;
+    width: 100px;
+    margin-top: 2px;
+    margin-left: 11px;
+    font-size: 10px;
+}
+
+.shopNow,
+.seeMore {
+    width: 48%;
+}
+
+.seeMore {
+    margin-top: 24px;
+}
+
+.shopNow a,
+.seeMore a {
+    font-size: 13px;
+    color: #7aa5d1;
+}
+
+.shopNow a:link,
+.seeMore a:link {
+    text-decoration: none;
+}
+
+.shopNow:hover *,
+.seeMore:hover * {
+    text-decoration: underline;
+    color: #edb37c;
+}
+
+#shopNowByCategory {
+    margin-top: 16px;
+}
+
+#cardsDealsProm img {
+    display: inline-block;
+    width: 212px;
+    height: 224px;
+    margin-top: 50px;
+    object-fit: cover;
+    object-position: 10% -250%;
+}
+
+#signDeliveryContainer {
+    background-color: transparent;
+}
+
+#cardsSignIn {
+    width: 295px;
+    height: 150px;
+    background-color: black;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 22px;
+    transition: transform .8s;
+}
+
+#cardsSignIn h3 {
+    text-align: left;
+    width: 80%;
+}
+
+#btnSignInCard {
+    width: 245px;
+}
+
+#cardsDelivery {
+    width: 295px;
+    height: 247px;
+    margin: -15.3px 0px 0px -11px;
+    background-image: url("https://img.inddist.com/files/base/indm/all/image/2018/02/id_33983_amazon_fba.png?fit=crop&h=394&w=700");
+    background-size: 295px 247px;
+    background-repeat: no-repeat;
+    transition: transform .8s;
+    cursor: pointer;
+}
+
+.cards2 {
+    margin-bottom: 0px;
+}
+
+
+.firstCard {
+    margin-left: 20px;
+}
+
+
+.cards2 img {
+    width: 82%;
+    height: 220px;
+    margin: 10px 0px 0px;
+    object-fit: fill;
+}
+
+.bottomText {
+    margin-top: 50px;
+}
+
+/* Cards after the carroussel */
+
+#cardContainerBox2 {
+    width: 1440px;
+    min-width: 1294px;
+    height: 855px;
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    flex-wrap: wrap;
+}
+
+.cardsLine2 {
+    margin-top: -50px;
+    margin-bottom: 75px;
+}
+
+#shopNowGamingMerch {
+    margin-top: 24px;
+}

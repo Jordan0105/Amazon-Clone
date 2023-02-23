@@ -1,0 +1,115 @@
+/* This is wheen the user click All Button Sub-Nav and the dropdown will appear */
+
+/* Dropdown */
+
+#dropDownContainer {
+    width: auto;
+    position: absolute;
+    z-index: 3;
+    height: 200%;
+    background-color: white;
+    color: black;
+    left: -380px;
+    top: 0px;
+}
+
+#dropDownHeader {
+    background-color: rgb(255, 215, 154);
+    width: 293px;
+    height: 66.431px;
+    margin-top: -15px;
+    padding-left: 25px;
+}
+
+#dropDownHeader h2 {
+    padding-top: 10px;
+}
+
+#containerListDropdown {
+    width: 318px;
+    height: 91.2%;
+    margin-top: -15px;
+    background-color: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-bottom: 169px;
+}
+
+#listContentDropdown {
+    background-color: white;
+    width: 100%;
+    margin-top: -14px;
+}
+
+.containerOptionDropdown h3 {
+    padding: 16px 0px 0px 25px;
+    margin-bottom: 22px;
+}
+
+
+.containerOptionBox p {
+    width: 91%;
+    margin-top: -12px;
+    font-size: 13px;
+    padding: 10px 0px 10px 25px;
+    height: auto;
+    color: black;
+    cursor: pointer;
+}
+
+.containerOptionBox:not(#helpSettingsBox) {
+    width: 100%;
+    height: auto;
+    border-bottom: 1.5px solid black;
+}
+
+.containerOptionBox p:hover {
+    background-color: rgba(128, 128, 128, 0.258);
+}
+
+
+.containerOptionBox p i {
+    float: right;
+    margin: 2px 15px 0px 0px;
+    color: gray;
+}
+
+.containerOptionBox p:hover>i {
+    color: black;
+}
+
+.arrowDownSeeAll {
+    margin: 2px 0px 0px 5px;
+    float: none;
+}
+
+#langOptionListDropdown i {
+    float: left;
+}
+
+.flagOpList img {
+    margin: 0px 10px -2px -5px;
+    width: 15px;
+    height: 15px;
+}
+
+#signDropdownBtn {
+    margin-bottom: 35px;
+}
+
+
+#closeDropdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    top: 5px;
+    left: 326px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}

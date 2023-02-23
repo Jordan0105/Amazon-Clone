@@ -1,0 +1,330 @@
+/* Footer */
+
+#signInPersonalizedBox {
+    min-width: 1260px;
+    height: 260px;
+    border-left: 0px;
+    border-right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    font-family: 'Kdam Thmor Pro', Helvetica;
+    background-color: #303e4f;
+}
+
+#personalizedContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 16px;
+    border: 1px solid #ffffff3d;
+    border-right: 0px;
+    border-left: 0px;
+    margin: 50px 0px 5px;
+    color: white;
+}
+
+#signInPersonalizedBtn {
+    width: 280px;
+}
+
+#newCostumerPersonalized {
+    margin: 5px 0px 32px;
+}
+
+#backTopBtn {
+    width: 100%;
+    display: flex;
+    height: 60px;
+    color: white;
+    background-color: rgb(55 73 94);
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Kdam Thmor Pro', Helvetica;
+    font-size: 13px;
+}
+
+#backTopBtn:hover {
+    cursor: pointer;
+    background-color: rgb(74 97 125);
+}
+
+/* More Options at Footer */
+
+#moreOfOurPrdouctsBox {
+    width: 100%;
+    height: 330px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: normal;
+    flex-wrap: wrap;
+    background-color: #303e4f;
+}
+
+#moreInfoBox {
+    min-width: 1000px;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: normal;
+    flex-wrap: wrap;
+    font-family: 'Kdam Thmor Pro', Helvetica;
+}
+
+.infoColumn {
+    width: 250px;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.listInfo {
+    list-style: none;
+    padding-left: 0px;
+    font-size: 13px;
+    color: #e2DDDD;
+}
+
+.listInfo li:hover {
+    text-decoration: underline;
+    color: #e2dddd;
+    cursor: pointer;
+}
+
+.infoColumn h3 {
+    text-align: left;
+    color: white;
+    cursor: default;
+}
+
+#info4 {
+    width: 145px;
+}
+
+/* Change Language, Currency or Country at Footer */
+
+#changeItems {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 900px;
+    background-color: #303e4f;
+    height: 130px;
+    font-family: 'Kdam Thmor Pro', Helvetica;
+    color: white;
+    border-top: 1px solid #ffffff3d;
+}
+
+#logoBoxFooter {
+    margin: 0px 0px 0px 0px;
+    padding: 3px 137px 3px 6px;
+}
+
+#logoImageFooter {
+    width: 140px;
+    height: 30px;
+}
+
+#btnFooterBox {
+    width: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    color: #e2dddd;
+}
+
+.btnFooter {
+    width: 150px;
+    height: 35px;
+    border: 1px solid #aab8cb;
+    border-radius: 4px;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btnText {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnFooter i {
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#setArrows {
+    width: 20px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 37px;
+}
+
+#setArrows span {
+    margin-top: 0px;
+    padding-top: 0px;
+    font-size: 20px;
+}
+
+#arrowUp {
+    margin-bottom: -12px;
+    padding-bottom: 0px;
+}
+
+#arrowDown {
+    margin-top: -15px;
+    padding-top: 0px;
+}
+
+/* If the user hover the Language Span container footer will appear */
+
+#showLangBtn:hover>#containerFooter {
+    display: block;
+}
+
+#containerFooter {
+    display: none;
+    width: 250px;
+    height: 275px;
+    position: absolute;
+    top: 3405.5px;
+    right: auto;
+    margin-left: 127px;
+    z-index: 1;
+}
+
+#triangleFooter {
+    margin-left: 112px;
+}
+
+#langButtonHoverBox2 {
+    height: 275px;
+}
+
+#btnFooterBox img {
+    width: 15px;
+    height: 15px;
+}
+
+/* Credits Box and All of Our Products (The last box in the webpage */
+
+#creditsBox {
+    width: 100%;
+    height: 680px;
+    display: flex;
+    justify-content: center;
+    background-color: #131a22;
+    color: #e2DDDD;
+}
+
+#creditsContainer {
+    max-width: 1275px;
+    display: flex;
+    height: 590px;
+    font: 10px 'Kdam Thmor Pro', Helvetica;
+    flex-wrap: wrap;
+    margin-top: 12px;
+    justify-content: center;
+}
+
+.rowCredits {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.boxesDescrip {
+    width: 100px;
+    margin: 10px 25px 0px 25px;
+}
+
+.linkMoreServices:link {
+    color: #e2DDDD;
+    text-decoration: none;
+}
+
+.linkMoreServices:hover {
+    text-decoration: underline;
+    color: white;
+
+}
+
+.linkMoreServices h5 {
+    margin-left: 5px;
+    color: white;
+    text-decoration: solid;
+    font-size: 12px;
+}
+
+.linkMoreServices p {
+    font-size: 10px;
+    margin: -18px 0px 0px 5px;
+}
+
+#row5Credits {
+    margin-left: -17px;
+}
+
+.lastCol {
+    margin: 10px 40px 0px 10px;
+}
+
+.titleBox {
+    font-weight: bold;
+}
+
+#amzSubs {
+    width: 125px;
+    margin-left: 5px;
+    margin-right: -52px;
+}
+
+#pillBox {
+    margin-left: 72px;
+    margin-right: 0px;
+}
+
+#conditionsOfUse {
+    width: 720px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3px;
+}
+
+#conditionsOfUse * {
+    margin-right: 20px;
+    color: #e2dddd;
+    text-decoration: solid;
+}
+
+.conditionsOfUse:hover {
+    text-decoration: underline;
+}
+
+/* When the user hover some buttons or click on the search bar */
+
+#modalHoveringOptions {
+    top: 123px;
+    min-width: 1260px;
+    width: 100%;
+    display: none;
+    flex-grow: 2;
+    height: 200%;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.527);
+}

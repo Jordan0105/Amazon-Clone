@@ -1,0 +1,325 @@
+/* Deliver To Country on NavBar Button */
+
+#deliverToCountryNavOption {
+
+    font-size: 12px;
+    height: 31px;
+    max-width: 120px;
+
+    margin-right: 5px;
+
+    width: auto;
+    padding: 6px 10px;
+    border: 1px solid transparent;
+    cursor: pointer;
+
+}
+
+#deliverToCountryNavOption:hover {
+
+    border: 1px solid black;
+
+}
+
+
+#deliverToCountryNavOption p {
+    display: flex;
+    flex-grow: 2;
+    min-width: 50px;
+    max-width: 150px;
+    width: auto;
+    height: 13px;
+    margin: 0px;
+    font-family: 'Kdam Thmor Pro', "Lucida Console";
+    color: black;
+
+}
+
+#countrySpan {
+
+    min-width: 50px;
+    max-width: 116px;
+
+    max-height: 17px;
+    display: block;
+    width: 100%;
+
+    margin-top: -19px;
+    margin-left: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+
+/* Bug */
+#amazonLogoNavBar:hover {
+    border: 1px solid black;
+
+}
+
+/* Choose your location Pop Box when Deliver To Button is clicked*/
+
+#locationPopBox {
+
+    display: none;
+    position: absolute;
+    width: 405px;
+    height: 455px;
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 0px 1px 15px #00000073;
+    background-color: white;
+    margin-left: 39px;
+    margin-top: -230px;
+    top: 50%;
+
+    z-index: 4;
+    font-family: 'Kdam Thmor Pro', Helvetica;
+    overflow: hidden;
+
+}
+
+#headerBox {
+    width: 100%;
+    height: 55px;
+    padding-left: 40px;
+    background-color: #80808026;
+    border-bottom: 1px solid black;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+
+}
+
+#bodyBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#paragraphBtnBox {
+    font-size: 12px;
+    width: 330px;
+    border-bottom: 1px solid;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+#paragraphBtnBox p {
+    color: black;
+}
+
+#signAdressBtn {
+
+    background-color: orange;
+    color: black;
+    font: 12px 'Kdam Thmor Pro', Helvetica;
+    width: 100%;
+    height: 34px;
+    border-radius: 7px;
+    border: 0px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+#signAdressBtn:hover,
+#doneBtn:hover {
+
+    background-color: #e99700;
+
+}
+
+#middleText {
+
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    width: 132px;
+    height: 20px;
+    text-align: center;
+    margin: -11px 0px 0px -4px;
+}
+
+#chooseCountryBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border: 1px solid; */
+    margin-top: 7px;
+    width: 100%;
+}
+
+#zipBox {
+
+    font-size: 12px;
+    width: 330px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid;
+    font: 12px 'Kdam Thmor Pro', Helvetica;
+}
+
+#zipInput {
+    width: 217px;
+    height: 32px;
+    border: 1px solid;
+    border-radius: 7px;
+    margin-right: 7px;
+    font-size: 15px;
+    font-family: 'Kdam Thmor Pro', Helvetica;
+}
+
+#zipBox button {
+    width: 95px;
+    height: 35px;
+    border: 1px solid;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    font: 12px 'Kdam Thmor Pro', Helvetica;
+    background-color: #f0f0f084;
+    cursor: pointer;
+}
+
+#zipBox button:hover {
+    background-color: #f0f0f0dd;
+}
+
+#countryBox {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+
+#selectCountryBtn {
+
+    background-color: #80808026;
+
+    width: 318px;
+    height: 34px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #8080808f;
+    border-bottom: 0px;
+    box-shadow: 0px 2px 5px #8080809e;
+
+}
+
+#selectCountryBtn:hover {
+
+    background-color: #80808047;
+    cursor: pointer;
+
+}
+
+#currentlyCountry {
+    display: inline-block;
+    color: black;
+    text-align: left;
+    padding-left: 5px;
+    min-width: 155px;
+    font-family: 'Kdam Thmor Pro', Helvetica;
+
+}
+
+#selectCountryBtn i {
+
+    color: black;
+    margin-left: 39%;
+
+}
+
+#doneBtn {
+
+    background-color: orange;
+    color: black;
+    font: 12px 'Kdam Thmor Pro', Helvetica;
+    width: 22%;
+    height: 34px;
+    border-radius: 7px;
+    border: 0px;
+    margin-left: 225px;
+    cursor: pointer;
+
+}
+
+/* When the user click on the button to change the country this box will appear */
+
+#countryListContainer {
+
+    display: none;
+    width: auto;
+    height: 344px;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+    top: 65px;
+    position: absolute;
+
+}
+
+#countryListBox {
+
+    width: 380px;
+    height: 341px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 1px;
+
+}
+
+.firstElement {
+
+    margin-top: 11px;
+
+}
+
+
+.nameCountry {
+
+    min-width: 341px;
+    height: 24px;
+    overflow: hidden;
+    font-size: 13px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 0px -1px;
+    color: black;
+    border: 1px solid transparent;
+
+}
+
+.nameCountry:hover {
+    background-color: #80808021;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+
+.lastElement {
+    margin-bottom: 11px;
+}
+
+#or {
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    width: 24px;
+    height: 20px;
+    text-align: center;
+    margin: -108px 0px 0px 8px;
+
+}

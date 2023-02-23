@@ -1,0 +1,29 @@
+/* Shopping Cart at NavBar */
+
+#shoppingCart {
+    margin-right: 22px;
+    height: 31.267px;
+    margin-left: 0px;
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cartText {
+    color: black;
+    margin-top: 7px;
+    margin-left: 2px;
+    font-size: 12px;
+}
+
+#cartAmount {
+    display: block;
+    margin-bottom: -27px;
+    margin-left: 6px;
+    font-size: 17px;
+}
+
+#cartAmount:hover {
+    border: 0px;
+}

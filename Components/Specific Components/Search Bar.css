@@ -1,0 +1,52 @@
+/* Search Product Bar at NavBar */
+
+#searchBox {
+
+    border-radius: 2px;
+    display: flex;
+    width: 780px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    flex-grow: 2;
+    overflow: hidden;
+    background-color: black;
+
+}
+
+#searchBar {
+
+    background-color: black;
+    color: white;
+    width: 300px;
+    height: 32px;
+    float: left;
+    padding: 6px;
+    margin: 0px;
+    font-size: 15px;
+    border: 2px solid black;
+    outline: none;
+    flex-grow: 2;
+    border-right: 0px;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webchangeLangkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+
+#searchIcon {
+    width: 33px;
+    height: 28px;
+    background-color: orange;
+    border: 2px solid black;
+    border-left: 2px solid;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,76 @@
+@import "./Specific Components/Deliver To.css";
+@import "./Specific Components/Search Bar.css";
+@import "./Specific Components/Change Language.css";
+@import "./Specific Components/Hello Sign In.css";
+@import "./Specific Components/Shopping Cart.css";
+
+
+/* Navigation Bar */
+
+#nav-bar {
+    background-color: white;
+    width: auto;
+    height: 65px;
+    margin: 0px;
+    font-family: 'Kdam Thmor Pro', Helvetica;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 2;
+}
+
+.navItem {
+    border: 1px solid transparent;
+    cursor: pointer
+}
+
+.navItem:hover:not(#logo_Delivery) {
+    border: 1px solid black;
+}
+
+/* Amazon Logo at NavBar */
+
+#logo_Delivery {
+
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 0px 3px;
+
+}
+
+.amazonLogoContainer {
+
+    width: 120px;
+    float: left;
+    height: 31px;
+    margin-right: 0px;
+    display: flex;
+    align-items: center;
+    padding: 6px 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.logo {
+
+    width: 120px;
+    height: 25px;
+
+}
+
+#signInNavBox,
+#returnOrders {
+    font-size: 12px;
+    margin-left: 0px;
+    min-width: 115px;
+    padding: 3px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#returnOrders {
+    min-width: 79px;
+}
