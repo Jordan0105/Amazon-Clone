@@ -14,7 +14,6 @@ I do not claim ownership of the material used in this project.
 
 ## Screenshots
 
-![Iphone 12](https://raw.githubusercontent.com/Jordan0105/Amazon-Clone/main/Screenshots/iPhone%2012%20Pro.png)
 ![iMac Retina](https://raw.githubusercontent.com/Jordan0105/Amazon-Clone/main/Screenshots/iMac%20Retina.png)
 ![Macbook Air](https://raw.githubusercontent.com/Jordan0105/Amazon-Clone/main/Screenshots/Macbook%20Air.png)
 ![Net Hub Max](https://raw.githubusercontent.com/Jordan0105/Amazon-Clone/main/Screenshots/Net%20Hub%20Max.png)
