@@ -2,7 +2,7 @@
 # Amazon Clone
 
 This is an Amazon clone made from scratch with HTML, CSS, and JavaScript. \
-This was my first fairly "big" project where I set out to recreate the interface of the Amazon website from scratch without copying the code from the original. \
+This was my first fairly "big" project where I set out to recreate the interface of the Amazon website from 0 without copying the code from the original. \
 The site is not responsive and may not look good on small screens.
 
 ## Copyright notice
